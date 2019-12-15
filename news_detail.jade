@@ -1,0 +1,104 @@
+doctype html
+html
+  include inc/head.jade
+  body.m
+    #wrapper_mobile
+      include inc/header.jade
+      section.breadcrumbs.pad10_0
+        .container
+          .row
+            .col-lg-12
+              ul
+                li
+                  a(href='#')
+                    i.fas.fa-home
+                    | Trang chủ
+                li
+                  a(href='#') Đời sống   
+                li
+                  a(href='#') Lorem ipsum dolor sit amet, consectetursit amet consectetur dolor sit amet  ...
+      .newsdetail-page.page_videos
+        .detail
+          h1 5 Essential Rules to a Healthy and Happy Life
+          // Details
+          .head
+            .text
+              span.date
+                | Admin - 
+                span 20/12/2018
+              span.social
+                img(src='img/like.jpg')
+          .xem-nhanh
+            ul
+              li
+                a(href='#')
+                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+              li
+                a(href='#')
+                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+              li
+                a(href='#')
+                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+          .ctent_detail
+            p
+              | What’s possible in a week? If you dedicated seven days to the achievement of one goal, how ambitious tyou make this goal? These were the questions that the multilingual friends Katy and Sara posed themselves when they determined to learn English in one week, to prove that it can be done and anyone can do it with the right methods. They would attempt to liberate themselves from the distractions and responsibilities of modern-day life in order to cram eight hours of study time and I was observing some of the world’s most capable language learners at work.
+            p
+              img.lazy(alt='', src='img/2day/detail.jpg')
+            p
+              | What’s possible in a week? If you dedicated seven days to the achievement of one goal, how ambitious tyou make this goal? These were the questions that the multilingual friends Katy and Sara posed themselves when they determined to learn English in one week, to prove that it can be done and anyone can do it with the right methods. They would attempt to liberate themselves from the distractions and responsibilities of modern-day life in order to cram eight hours of study time and I was observing some of the world’s most capable language learners at work.
+        .box-comments
+          span.count Ý kiến bạn đọc (107)
+        #comments.comments-area
+          .replay_comment
+            -for(y=0;y<2;y++)
+              .l
+                .name
+                  ._left
+                    img(src='img/2day/avatar.jpg')
+                    h5
+                      | Nguyễn Mạnh Linh 
+                      span - 07:25 13/08
+                .content
+                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has  Lorem Ipsum is simply dummy text of the printing and typesetting industry. ...
+                .replay
+                  a.like(href='#')
+                    i.fas.fa-thumbs-up
+                    |  200 Thích
+                  a.answer(href='#')
+                    | Trả lời
+                    i.fas.fa-flag
+                  a.share(href='#')
+                    | Chia sẻ
+                    i.fas.fa-chevron-down                
+                .persion-replay
+                  -for(i=0;i<3;i++)
+                    .pr
+                      .head
+                        ._left
+                          img(src='img/2day/avatar.jpg')
+                          h5
+                            | Nguyễn Mạnh Linh 
+                            span - 07:25 13/08                 
+                      .msg
+                        p
+                          | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has  Lorem Ipsum is simply dummy text of the printing and typesetting industry. ...
+                      .replay
+                        a.like(href='#')
+                          i.fas.fa-thumbs-up
+                          |  200 Thích
+                        a.answer(href='#')
+                          | Trả lời
+                          i.fas.fa-flag
+                        a.share(href='#')
+                          | Chia sẻ
+                          i.fas.fa-chevron-down 
+               
+
+      include inc/footer.jade
+    script(type='text/javascript', src='js/jquery.min.js')
+    script(type='text/javascript', src='js/bootstrap.js')
+    script(type='text/javascript', src='js/owl.carousel.min.js')
+    script(type='text/javascript', src='js/jquery.lazy.js')
+    script(type='text/javascript', src='js/swiper.js')
+    script(type='text/javascript', src='js/jquery.magnific-popup.js')
+    script(type='text/javascript', src='js/main.js')
