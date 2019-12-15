@@ -2255,9 +2255,30 @@ img {
       #wrapper_mobile .breadcrumbs ul li:last-child::after {
         display: none; }
   #wrapper_mobile #footer-new {
-    margin: 10px 0 0 0;
+    margin: 10px 0;
     background: #fff;
-    padding: 0 0 120px 0; }
+    text-align: center; }
+    #wrapper_mobile #footer-new p.style1 {
+      font-size: 20px; }
+    #wrapper_mobile #footer-new p {
+      font-size: 16px; }
+    #wrapper_mobile #footer-new ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      display: -webkit-flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      padding: 10px 0; }
+      #wrapper_mobile #footer-new ul li {
+        margin: 0 10px; }
+        #wrapper_mobile #footer-new ul li a {
+          font-size: 20px;
+          color: #000; }
 
 .nav-fix-bt-detail {
   position: fixed;
