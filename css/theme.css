@@ -2876,6 +2876,19 @@ img {
 .page_videos .video_list {
   padding: 0 0 10px 0;
   border-bottom: 1px solid #dbdbdb; }
+  .page_videos .video_list h2._top-head {
+    font-size: 20px;
+    position: relative;
+    text-transform: uppercase;
+    margin: 15px 15px 0 15px; }
+    .page_videos .video_list h2._top-head::after {
+      content: "";
+      position: absolute;
+      width: 70px;
+      height: 1px;
+      background: #000;
+      margin: 0 0 0 10px;
+      top: 15px; }
 
 .page_videos .item {
   position: relative; }
@@ -2918,6 +2931,16 @@ img {
       margin: 20px 0 10px 0; }
     .page_videos .item.style1 .caption {
       padding: 0; }
+  .page_videos .item.style2 .img {
+    margin: 20px 0 10px 0; }
+  .page_videos .item.style2 .caption {
+    padding: 0; }
+  .page_videos .item.style3 {
+    padding: 20px 15px 10px 15px; }
+    .page_videos .item.style3 h3 a {
+      color: #000; }
+    .page_videos .item.style3 .caption {
+      padding: 0; }
 
 .page_videos ._item_ {
   display: -webkit-box;
@@ -2944,6 +2967,7 @@ img {
       color: #000;
       margin: 0 0 10px 0; }
     .page_videos ._item_ .text span {
-      font-size: 16px; }
-      .page_videos ._item_ .text span span.date {
-        font-style: italic; }
+      font-size: 16px;
+      color: #01c3ff; }
+      .page_videos ._item_ .text span.date {
+        color: #000; }

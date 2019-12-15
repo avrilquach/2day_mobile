@@ -3452,6 +3452,19 @@ img
   .video_list
     padding: 0 0 10px 0
     border-bottom: 1px solid #dbdbdb
+    h2._top-head
+      font-size: 20px
+      position: relative
+      text-transform: uppercase
+      margin: 15px 15px 0 15px
+      &::after
+        content: ""
+        position: absolute
+        width: 70px
+        height: 1px
+        background: #000
+        margin: 0 0 0 10px
+        top: 15px
   .item
     position: relative
     .caption
@@ -3501,6 +3514,17 @@ img
         margin: 20px 0 10px 0
       .caption
         padding: 0
+    &.style2
+      .img
+        margin: 20px 0 10px 0
+      .caption
+        padding: 0
+    &.style3
+      padding: 20px 15px 10px 15px
+      h3 a
+        color: #000    
+      .caption
+        padding: 0
   ._item_
     display: -webkit-box
     display: -ms-flexbox
@@ -3534,6 +3558,6 @@ img
 
       span
         font-size: 16px
-
-        span.date
-          font-style: italic
+        color: #01c3ff
+        &.date
+          color: #000
