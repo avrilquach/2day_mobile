@@ -2723,31 +2723,6 @@ img
 
         .trangthai
           margin: 10px 0 0 0
-
-  .breadcrumbs
-    background: #fff
-
-    ul
-      display: -webkit-box
-      display: -ms-flexbox
-      display: flex
-      display: -webkit-flex
-      -webkit-box-align: center
-      -ms-flex-align: center
-      align-items: center
-
-      li
-        a
-          color: #1d99cc
-
-        &::after
-          content: "/"
-          padding: 0 5px
-          color: #1d99cc
-
-        &:last-child::after
-          display: none
-
   #footer-new
     margin: 10px 0
     background: #fff
@@ -3478,6 +3453,9 @@ img
         background: #000
         margin: 0 0 0 10px
         top: 15px
+      &._none_line
+        &::after
+          display: none
   .item
     position: relative
     .caption
@@ -3538,6 +3516,10 @@ img
         color: #000    
       .caption
         padding: 0
+    &.style4
+      padding: 0 0 10px 0
+      h3 a
+        color: #000    
   ._item_
     display: -webkit-box
     display: -ms-flexbox
@@ -3574,3 +3556,41 @@ img
         color: #01c3ff
         &.date
           color: #000
+section.breadcrumbs
+  background: #f3f3f3
+
+  ul
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    display: -webkit-flex
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+
+    li
+      a
+        color: #636363
+        font-size: 16px
+
+        i
+          margin: 0 10px 0 0
+
+      &::after
+        content: "-"
+        padding: 0 10px
+
+      &:last-child::after
+        display: none
+
+  &.breadcrumbs2 ul
+    padding: 10px
+    background: #f7f7f7
+
+    li
+      a, &::after
+        color: #1d99cc
+
+  &.breadcrumbs3 ul li
+    a, &::after
+      color: #1d99cc
