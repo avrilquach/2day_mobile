@@ -1,9 +1,4 @@
 $(document).ready(function() {
-	$('.popup-youtube').magnificPopup({
-				type: 'iframe',
-				mainClass: 'mfp-fade',
-				preloader: true,
-		});
 	$('.lazy').lazy();
 	 $('.close_mobile').click(function(e)
 	 {

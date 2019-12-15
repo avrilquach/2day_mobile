@@ -189,16 +189,7 @@ img
         background-color: #3a4144
         display: block
         border-radius: 50%
-  .partner
-    margin: 10px 0 0 0
-    background: #fff
-
-    ul li
-      width: 160px
-      text-align: center
-      margin: 0 15px
-      border: 1px solid #b7b7b7
-
+  
   .products
     background: #fff
     margin: 10px 0 0 0
@@ -3452,54 +3443,97 @@ img
     border-radius: 25px
     color: #636363
 .page_videos
-  .banner_video
-    background: #fff
-    h3, span
-      padding: 0 15px
-  .owl-dots
-    top: 50%
-    bottom: auto !important
-  .img
-    position: relative
-    margin: 0 0 10px 0
-
-    &::before
-      content: ""
-      position: absolute
-      background: rgba(0, 0, 0, 0.5)
-      top: 0
-      left: 0
-      right: 0
-      width: 100%
-      height: 100%
-
-    .popup-youtube
-      position: absolute
-      right: 0
-      left: 0
-      top: 45%
-      margin: 0 auto
-      text-align: center
-
-      i
-        font-size: 30px
-        color: #fff
-
-  h3
-    font-size: 20px
-    margin: 0 0 10px 0
-
-  p
-    font-size: 16px
-    color: #636363
-    margin: 0 0 10px 0
-
-  span
-    font-size: 14px
-    font-style: italic
   .swiper-container
     background: #fff
     ul.swiper-wrapper
       li
         margin: 0 0 0 15px
         width: 80%
+  .video_list
+    padding: 0 0 10px 0
+    border-bottom: 1px solid #dbdbdb
+  .item
+    position: relative
+    .caption
+      padding: 0 15px
+    .img
+      position: relative
+      margin: 0 0 10px 0
+
+      img
+        width: 100%
+
+      .popup-youtube
+        position: absolute
+        right: 0
+        left: 0
+        top: 40%
+        margin: 0 auto
+        text-align: center
+        width: 10%
+
+        i
+          font-size: 30px
+          color: #fff
+
+        img
+          width: 100%
+          margin: 0 auto
+
+    h3
+      font-size: 20px
+      margin: 0 0 10px 0
+      color: #000
+
+    p
+      font-size: 16px
+      color: #636363
+      margin: 0 0 10px 0
+
+    span
+      font-size: 14px
+
+      span.date
+        font-style: italic
+    &.style1
+      padding: 0 15px
+      h3
+        margin: 20px 0 10px 0
+      .caption
+        padding: 0
+  ._item_
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    display: -webkit-flex
+    padding: 20px 15px
+
+    .img
+      padding: 0 15px 0 0
+      width: 45%
+
+      img
+        width: 100%
+        border: 1px solid #ccc
+
+    .text
+      width: calc(100% - 45%)
+
+      h4
+        margin: -10px 0 10px 0
+
+        a
+          color: #000
+          font-size: 20px
+          font-weight: bold
+
+      p
+        font-size: 16px
+        color: #000
+        margin: 0 0 10px 0
+
+      span
+        font-size: 16px
+
+        span.date
+          font-style: italic

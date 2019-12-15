@@ -1,206 +1,57 @@
 doctype html
 html
-  head
-    meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-    meta(name='description', content='')
-    meta(name='author', content='')
-    meta(name='generator', content='')
-    // Load css styles
-    link(rel='stylesheet', type='text/css', href='css/bootstrap.css')
-    link(rel='stylesheet', type='text/css', href='css/owl-carousel2/owl.carousel.css')
-    link(rel='stylesheet', type='text/css', href='css/swiper.css')
-    link(rel='stylesheet', type='text/css', href='css/font-awesome.css')
-    link(rel='stylesheet', type='text/css', href='css/magnific-popup.css')
-    link(rel='stylesheet', type='text/css', href='css/theme.css')
-    title Đẳng cấp phái đẹp
+  include inc/head.jade
   body.m
     #wrapper_mobile
       include inc/header.jade
-      // Partner
-      .partner.swiper-container.pad30_0
-        ul.swiper-wrapper
-          li.swiper-slide
-            a(href='#')
-              img(src='img/partner1.jpg', alt='')
-          li.swiper-slide
-            a(href='#')
-              img(src='img/partner1.jpg', alt='')
-          li.swiper-slide
-            a(href='#')
-              img(src='img/partner1.jpg', alt='')
-          li.swiper-slide
-            a(href='#')
-              img(src='img/partner1.jpg', alt='')
-          li.swiper-slide
-            a(href='#')
-              img(src='img/partner1.jpg', alt='')
-      // Products
-      section.products.heading.pad30_0
-        .container
-          h1 Sản phẩm khuyến mãi
-          .main-products.swiper-container.padtp30_0
+      .page_videos
+        section.video_list
+          .item
+            .img
+              img(src='img/2day/img3.jpg', alt='')
+              a.popup-youtube(href='#')
+                img(src='img/2day/icon.png', alt='')
+            .caption
+              h3 Sơn Tùng tại Sky Tour TP.HCM: Caó gì trao hết...
+              p Trưa ngày 28/7, sự kiện Meet&Greet của Sky Tour 2019 đã chính thức diễn ra tại TP.HCM. Tham gia sự kiện này, khán giả đã được giao lưu thân mật với Sơn Tùng M-TP, xem trước chương trình tổng duyệt và nhận poster có
+        section.video_list
+          -for(i=0;i<2;i++)
+            ._item_
+              .img
+                img(src='img/2day/img1.jpg', alt='')
+              .text
+                h4
+                  a(href='#') Lorem Ipsum is simply dummy text of the printing and typesetting industry
+        section.video_list
+          .item.style1
+            h3 Sơn Tùng tại Sky Tour TP.HCM: Caó gì trao hết...
+            .img
+              img(src='img/2day/img3.jpg', alt='')
+              a.popup-youtube(href='#')
+                img(src='img/2day/icon.png', alt='')
+            .caption
+              p Trưa ngày 28/7, sự kiện Meet&Greet của Sky Tour 2019 đã chính thức diễn ra tại TP.HCM. Tham gia sự kiện này, khán giả đã được giao lưu thân mật với Sơn Tùng M-TP, xem trước chương trình tổng duyệt và nhận poster có
+        section.video_list
+          .item.style1
+            h3 Sơn Tùng tại Sky Tour TP.HCM: Caó gì trao hết...
+            .img
+              img(src='img/2day/img3.jpg', alt='')
+              a.popup-youtube(href='#')
+                img(src='img/2day/icon.png', alt='')
+            .caption
+              p Trưa ngày 28/7, sự kiện Meet&Greet của Sky Tour 2019 đã chính thức diễn ra tại TP.HCM. Tham gia sự kiện này, khán giả đã được giao lưu thân mật với Sơn Tùng M-TP, xem trước chương trình tổng duyệt và nhận poster có
+        section.video_list
+          .swiper-container
             ul.swiper-wrapper
-              li.swiper-slide
-                a.item(href='#')
-                  .img
-                    img.lazy(data-src='img/product1.jpg')
-                    span.sticker Sale
-                  h5 Kem dưỡng trắng da chống lão hóa chiết suất từ callogen...
-                  p Tinh chất dưỡng sáng da, nâng cơ mặt...
-                  span.price
-                    span.new 3.700.000đ
-                    span.old 4.700.000đ
-                  span.rate
-                    i.fa.fa-star.green
-                    i.fa.fa-star.green
-                    i.fa.fa-star.green
-                    i.fa.fa-star.green
-                    i.fa.fa-star
-              li.swiper-slide
-                a.item(href='#')
-                  .img
-                    img.lazy(data-src='img/product1.jpg')
-                    span.sticker Sale
-                  h5 Kem dưỡng trắng da chống lão hóa chiết suất từ callogen...
-                  p Tinh chất dưỡng sáng da, nâng cơ mặt...
-                  span.price
-                    span.new 3.700.000đ
-                    span.old 4.700.000đ
-                  span.rate
-                    i.fa.fa-star.green
-                    i.fa.fa-star.green
-                    i.fa.fa-star.green
-                    i.fa.fa-star.green
-                    i.fa.fa-star
-              li.swiper-slide
-                a.item(href='#')
-                  .img
-                    img.lazy(data-src='img/product1.jpg')
-                    span.sticker Sale
-                  h5 Kem dưỡng trắng da chống lão hóa chiết suất từ callogen...
-                  p Tinh chất dưỡng sáng da, nâng cơ mặt...
-                  span.price
-                    span.new 3.700.000đ
-                    span.old 4.700.000đ
-                  span.rate
-                    i.fa.fa-star.green
-                    i.fa.fa-star.green
-                    i.fa.fa-star.green
-                    i.fa.fa-star.green
-                    i.fa.fa-star
-              li.swiper-slide
-                a.item(href='#')
-                  .img
-                    img.lazy(data-src='img/product1.jpg')
-                    span.sticker Sale
-                  h5 Kem dưỡng trắng da chống lão hóa chiết suất từ callogen...
-                  p Tinh chất dưỡng sáng da, nâng cơ mặt...
-                  span.price
-                    span.new 3.700.000đ
-                    span.old 4.700.000đ
-                  span.rate
-                    i.fa.fa-star.green
-                    i.fa.fa-star.green
-                    i.fa.fa-star.green
-                    i.fa.fa-star.green
-                    i.fa.fa-star
-              li.swiper-slide
-                a.item(href='#')
-                  .img
-                    img.lazy(data-src='img/product1.jpg')
-                    span.sticker Sale
-                  h5 Kem dưỡng trắng da chống lão hóa chiết suất từ callogen...
-                  p Tinh chất dưỡng sáng da, nâng cơ mặt...
-                  span.price
-                    span.new 3.700.000đ
-                    span.old 4.700.000đ
-                  span.rate
-                    i.fa.fa-star.green
-                    i.fa.fa-star.green
-                    i.fa.fa-star.green
-                    i.fa.fa-star.green
-                    i.fa.fa-star
-              li.swiper-slide
-                a.item(href='#')
-                  .img
-                    img.lazy(data-src='img/product1.jpg')
-                    span.sticker Sale
-                  h5 Kem dưỡng trắng da chống lão hóa chiết suất từ callogen...
-                  p Tinh chất dưỡng sáng da, nâng cơ mặt...
-                  span.price
-                    span.new 3.700.000đ
-                    span.old 4.700.000đ
-                  span.rate
-                    i.fa.fa-star.green
-                    i.fa.fa-star.green
-                    i.fa.fa-star.green
-                    i.fa.fa-star.green
-                    i.fa.fa-star
-              li.swiper-slide
-                a.item(href='#')
-                  .img
-                    img.lazy(data-src='img/product1.jpg')
-                    span.sticker Sale
-                  h5 Kem dưỡng trắng da chống lão hóa chiết suất từ callogen...
-                  p Tinh chất dưỡng sáng da, nâng cơ mặt...
-                  span.price
-                    span.new 3.700.000đ
-                    span.old 4.700.000đ
-                  span.rate
-                    i.fa.fa-star.green
-                    i.fa.fa-star.green
-                    i.fa.fa-star.green
-                    i.fa.fa-star.green
-                    i.fa.fa-star
-              li.swiper-slide
-                a.item(href='#')
-                  .img
-                    img.lazy(data-src='img/product1.jpg')
-                    span.sticker Sale
-                  h5 Kem dưỡng trắng da chống lão hóa chiết suất từ callogen...
-                  p Tinh chất dưỡng sáng da, nâng cơ mặt...
-                  span.price
-                    span.new 3.700.000đ
-                    span.old 4.700.000đ
-                  span.rate
-                    i.fa.fa-star.green
-                    i.fa.fa-star.green
-                    i.fa.fa-star.green
-                    i.fa.fa-star.green
-                    i.fa.fa-star
-              li.swiper-slide
-                a.item(href='#')
-                  .img
-                    img.lazy(data-src='img/product1.jpg')
-                    span.sticker Sale
-                  h5 Kem dưỡng trắng da chống lão hóa chiết suất từ callogen...
-                  p Tinh chất dưỡng sáng da, nâng cơ mặt...
-                  span.price
-                    span.new 3.700.000đ
-                    span.old 4.700.000đ
-                  span.rate
-                    i.fa.fa-star.green
-                    i.fa.fa-star.green
-                    i.fa.fa-star.green
-                    i.fa.fa-star.green
-                    i.fa.fa-star
-              li.swiper-slide
-                a.item(href='#')
-                  .img
-                    img.lazy(data-src='img/product1.jpg')
-                    span.sticker Sale
-                  h5 Kem dưỡng trắng da chống lão hóa chiết suất từ callogen...
-                  p Tinh chất dưỡng sáng da, nâng cơ mặt...
-                  span.price
-                    span.new 3.700.000đ
-                    span.old 4.700.000đ
-                  span.rate
-                    i.fa.fa-star.green
-                    i.fa.fa-star.green
-                    i.fa.fa-star.green
-                    i.fa.fa-star.green
-                    i.fa.fa-star
+              -for(i=0;i<4;i++)
+                li.swiper-slide
+                  a.item(href='#')
+                    .img
+                      img(src='img/2day/img1.jpg', alt='')
+                    .caption
+                      h3 Sơn Tùng tại Sky Tour TP.HCM: Caó gì trao hết...
+
+          
       section.products.heading.pad30_0
         .container
           h2 Chăm sóc da an toàn
@@ -576,24 +427,6 @@ html
             #cate2_tab3.tab-pane.fade
       // Footer
       footer#footer-new
-        .footer-top.pad30_0
-          .container
-            .item
-              h4 Tổng đài hỗ trợ:
-              img.lazy(data-src='img/icon.jpg', alt='')
-              a(href='tel:0888845999') 08888 45 999
-            .item
-              img.lazy(data-src='img/f1.png')
-              h3 Cam kết hàng chính hãng
-            .item
-              img.lazy(data-src='img/f2.png')
-              h3 Tích điểm thành viên vip
-            .item
-              img.lazy(data-src='img/f3.png')
-              h3 Miễn phí vận chuyển
-            .item
-              img.lazy(data-src='img/f4.png')
-              h3 Chăm sóc tư vấn tận tình
         .footer-bottom
           .container
             a.footer-logo(href='#')
