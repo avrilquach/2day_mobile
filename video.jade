@@ -2,71 +2,68 @@ doctype html
 html
   include inc/head.jade
   body.m
-    #wrapper_mobile.page_videos
-      // Header
-      header#header.pad40_20.header2
-        .nav-top
-          .container
-            .row.align-items-center.justify-content-between
-              .col-1
-                a.menu-back(href='javascript:void(0)')
-                  i.fas.fa-chevron-left
-              .col-8
-                h2 Video
-              .col-3.row.align-items-end.justify-content-between
-                .search
-                  a(href='javascript:void(0)')
-                    img(src='img/i-search.png', alt='')
-                .cart
-                  img(src='img/i-cart.png', alt='')
-                  span 5
-      include inc/banner_video.jade
-      .swiper-container.pad30_0
-        ul.swiper-wrapper
-          -for(i=0;i<3;i++)
-            li.swiper-slide.item
+    #wrapper_mobile
+      include inc/header.jade
+      section.breadcrumbs.pad10_0
+        .container
+          .row
+            .col-lg-12
+              ul
+                li
+                  a(href='#')
+                    i.fas.fa-home
+                    | Trang chủ
+                li
+                  a(href='#') Đời sống   
+
+      .page_videos
+        section.video_list
+          -for(i=0;i<2;i++)
+            .item.style4
               .img
-                img(src='img/video/video2.jpg', alt='First slide')
-                a.popup-youtube(href="https://www.youtube.com/watch?v=aMwvlC6RdHc?autoplay=1&amp;rel=0" id="video1")
-                  i.far.fa-play-circle
-              h3 Overwatch With Peter Dinklage And Lena Headey
-              span Jenifer Lopez |  MAY 27, 2016
-      .list_category.pad30_0
-        h2 Làm đẹp video
-        -for(i=0;i<3;i++)
-          .item
-            .img
-              img(src='img/video/video2.jpg', alt='')
-              a.popup-youtube(href="https://www.youtube.com/watch?v=aMwvlC6RdHc?autoplay=1&amp;rel=0" id="video1")
-                i.far.fa-play-circle
-            h3 Overwatch With Peter Dinklage And Lena Headey
-            p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
-            span Jenifer Lopez |  MAY 27, 2016
-        a(href="#").readmore Xem thêm
-      .list_category.pad30_0
-        h2 Đời sống video
-        -for(i=0;i<3;i++)
-          .item
-            .img
-              img(src='img/video/video2.jpg', alt='')
-              a.popup-youtube(href="https://www.youtube.com/watch?v=aMwvlC6RdHc?autoplay=1&amp;rel=0" id="video1")
-                i.far.fa-play-circle
-            h3 Overwatch With Peter Dinklage And Lena Headey
-            p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
-            span Jenifer Lopez |  MAY 27, 2016
-        a(href="#").readmore Xem thêm
-      .list_category.pad30_0
-        h2 Cinema
-        -for(i=0;i<3;i++)
-          .item
-            .img
-              img(src='img/video/video2.jpg', alt='')
-              a.popup-youtube(href="https://www.youtube.com/watch?v=aMwvlC6RdHc?autoplay=1&amp;rel=0" id="video1")
-                i.far.fa-play-circle
-            h3 Overwatch With Peter Dinklage And Lena Headey
-            p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
-            span Jenifer Lopez |  MAY 27, 2016
-        a(href="#").readmore Xem thêm
-      
+                img(src='img/2day/img3.jpg', alt='')
+              .caption
+                h3 
+                  a(href='#') Sơn Tùng tại Sky Tour TP.HCM: Caó gì trao hết...
+                span
+                  | Bởi 
+                  strong Amin  
+                  | -  
+                  span.date 1 giờ trước
+        section.banner_ads
+          a(href="#")
+            img(src='img/2day/banner__ads.jpg',alt='')
+        section.video_list
+          -for(i=0;i<4;i++)
+            .item.style3
+              .img
+                img(src='img/2day/img3.jpg', alt='')
+              .caption
+                h3 
+                  a(href="#") Sơn Tùng tại Sky Tour TP.HCM: Caó gì trao hết...
+                p Trưa ngày 28/7, sự kiện Meet&Greet của Sky Tour 2019 đã chính thức diễn ra tại TP.HCM. Tham gia sự kiện này, khán giả đã được giao lưu thân mật với Sơn Tùng M-TP, xem trước chương trình tổng duyệt và nhận poster có
+                span
+                  | Bởi 
+                  strong Amin  
+                  | -  
+                  span.date 1 giờ trước
+        section.video_list
+          h2._top-head._none_line Tin nổi bật
+          -for(i=0;i<2;i++)
+            ._item_
+              .img
+                img(src='img/2day/img1.jpg', alt='')
+              .text
+                h4
+                  a(href='#') Lorem Ipsum is simply dummy text
+                span
+                  | Đời sống 
+                  span.date - 1 ngày trước
       include inc/footer.jade
-      include inc/script.jade
+    script(type='text/javascript', src='js/jquery.min.js')
+    script(type='text/javascript', src='js/bootstrap.js')
+    script(type='text/javascript', src='js/owl.carousel.min.js')
+    script(type='text/javascript', src='js/jquery.lazy.js')
+    script(type='text/javascript', src='js/swiper.js')
+    script(type='text/javascript', src='js/jquery.magnific-popup.js')
+    script(type='text/javascript', src='js/main.js')
