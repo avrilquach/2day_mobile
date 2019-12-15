@@ -46,6 +46,19 @@ html
               img.lazy(alt='', src='img/2day/detail.jpg')
             p
               | What’s possible in a week? If you dedicated seven days to the achievement of one goal, how ambitious tyou make this goal? These were the questions that the multilingual friends Katy and Sara posed themselves when they determined to learn English in one week, to prove that it can be done and anyone can do it with the right methods. They would attempt to liberate themselves from the distractions and responsibilities of modern-day life in order to cram eight hours of study time and I was observing some of the world’s most capable language learners at work.
+        section.video_list
+          h2._top-head Tin liên quan
+          -for(i=0;i<2;i++)
+            ._item_
+              .img
+                img(src='img/2day/img1.jpg', alt='')
+              .text
+                h4
+                  a(href='#') Lorem Ipsum is simply dummy text
+                span
+                  | Đời sống 
+                  span.date - 1 ngày trước
+      
         .box-comments
           span.count Ý kiến bạn đọc (107)
         #comments.comments-area
@@ -92,7 +105,16 @@ html
                         a.share(href='#')
                           | Chia sẻ
                           i.fas.fa-chevron-down 
-               
+        form.comments-review
+          textarea.comments(name='comments', placeholder='Ý kiến của bạn ')
+          p
+            | Hãy 
+            a(href='#') Đăng Nhập 
+            | hoặc 
+            a(href='#') Tạo Tài Khoản 
+            | để gửi bình luận
+          span.submit
+            input(type='submit', value='Gửi')
 
       include inc/footer.jade
     script(type='text/javascript', src='js/jquery.min.js')

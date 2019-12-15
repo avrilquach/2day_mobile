@@ -618,87 +618,6 @@ img {
           color: #535353; }
         #wrapper_mobile .reviewvote .choose .choose-star ul li:hover i {
           color: #0f8905; }
-  #wrapper_mobile .comments-review {
-    position: relative; }
-    #wrapper_mobile .comments-review .form-bg {
-      border: 1px solid #ebebeb; }
-    #wrapper_mobile .comments-review h2 {
-      background: #f8f8f8;
-      padding: 10px 15px;
-      border-bottom: 1px solid #ebebeb;
-      font-size: 18px; }
-    #wrapper_mobile .comments-review .comments {
-      width: 100%;
-      border: none;
-      height: 100px;
-      outline: none;
-      padding: 20px; }
-    #wrapper_mobile .comments-review span.options {
-      border-top: 1px solid #ebebeb;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      width: 100%;
-      display: -webkit-flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      padding: 10px 0; }
-    #wrapper_mobile .comments-review span.files {
-      width: 100%; }
-      #wrapper_mobile .comments-review span.files span {
-        position: absolute;
-        left: 15px;
-        font-size: 18px;
-        cursor: pointer; }
-        #wrapper_mobile .comments-review span.files span i {
-          margin: 0 10px 0 0; }
-      #wrapper_mobile .comments-review span.files input[type="file"] {
-        opacity: 0;
-        width: 100%;
-        cursor: pointer; }
-    #wrapper_mobile .comments-review span.hoten {
-      border-right: 1px solid #ebebeb; }
-      #wrapper_mobile .comments-review span.hoten input {
-        background: #f7f7f7;
-        font-style: italic;
-        width: 200px;
-        height: 48px;
-        border: 1px solid #ebebeb;
-        color: #8c8c8c;
-        padding: 0 10px;
-        width: 100%;
-        margin: 20px 0 0 0; }
-        #wrapper_mobile .comments-review span.hoten input::-webkit-input-placeholder, #wrapper_mobile .comments-review span.hoten input:-ms-input-placeholder, #wrapper_mobile .comments-review span.hoten input::-ms-input-placeholder, #wrapper_mobile .comments-review span.hoten input::-webkit-input-placeholder {
-          font-style: italic; }
-        #wrapper_mobile .comments-review span.hoten input::-webkit-input-placeholder, #wrapper_mobile .comments-review span.hoten input:-ms-input-placeholder, #wrapper_mobile .comments-review span.hoten input::-ms-input-placeholder, #wrapper_mobile .comments-review span.hoten input::placeholder {
-          font-style: italic; }
-    #wrapper_mobile .comments-review span.submit input[type="text"] {
-      background: #f7f7f7;
-      font-style: italic;
-      width: 200px;
-      height: 48px;
-      border: 1px solid #ebebeb;
-      color: #8c8c8c;
-      padding: 0 10px;
-      width: 100%;
-      margin: 20px 0 0 0; }
-      #wrapper_mobile .comments-review span.submit input[type="text"]::-webkit-input-placeholder, #wrapper_mobile .comments-review span.submit input[type="text"]:-ms-input-placeholder, #wrapper_mobile .comments-review span.submit input[type="text"]::-ms-input-placeholder, #wrapper_mobile .comments-review span.submit input[type="text"]::-webkit-input-placeholder {
-        font-style: italic; }
-      #wrapper_mobile .comments-review span.submit input[type="text"]::-webkit-input-placeholder, #wrapper_mobile .comments-review span.submit input[type="text"]:-ms-input-placeholder, #wrapper_mobile .comments-review span.submit input[type="text"]::-ms-input-placeholder, #wrapper_mobile .comments-review span.submit input[type="text"]::placeholder {
-        font-style: italic; }
-    #wrapper_mobile .comments-review span.submit input[type="submit"] {
-      width: 60px;
-      height: 35px;
-      background: #0f890e;
-      text-align: center;
-      border-radius: 5px;
-      border: none;
-      color: #fff;
-      text-transform: uppercase;
-      position: absolute;
-      right: 0;
-      bottom: -60px; }
   #wrapper_mobile .dmsp {
     background: #fff;
     padding: 0 0 90px 0;
@@ -1588,70 +1507,14 @@ img {
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between; }
-  #wrapper_mobile .news-other-2 {
-    padding: 15px;
-    background: #fff;
-    margin: 10px 0 0 0; }
-    #wrapper_mobile .news-other-2 span.total {
-      font-size: 16px; }
-    #wrapper_mobile .news-other-2 ul li a {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      display: -webkit-flex;
-      margin: 0 0 15px 0; }
-      #wrapper_mobile .news-other-2 ul li a img {
-        height: 120px; }
-      #wrapper_mobile .news-other-2 ul li a .text h5 {
-        font-size: 14px;
-        color: #212121;
-        font-weight: bold;
-        margin: 0;
-        padding: 0 0 0 15px; }
-    #wrapper_mobile .news-other-2 .read-more {
-      margin: 0 -15px;
-      text-align: center;
-      line-height: 40px;
-      border-top: 1px solid #d9d9d9; }
-      #wrapper_mobile .news-other-2 .read-more a {
-        color: #266cd6; }
-        #wrapper_mobile .news-other-2 .read-more a i {
-          margin: 0 0 0 10px; }
-  #wrapper_mobile .brands {
-    background: #fff;
-    margin: 0 0 10px 0; }
-    #wrapper_mobile .brands .ct {
-      text-align: justify;
-      padding: 0 15px; }
-      #wrapper_mobile .brands .ct img {
-        margin: 0 auto;
-        display: block; }
-      #wrapper_mobile .brands .ct h1 {
-        font-size: 25px;
-        color: #535353;
-        font-weight: bold;
-        margin: 0 0 10px 0; }
-      #wrapper_mobile .brands .ct h2 {
-        margin: 0 0 10px 0;
-        color: #535353;
-        font-size: 15px; }
-      #wrapper_mobile .brands .ct h3 {
-        color: #535353;
-        font-size: 15px; }
-      #wrapper_mobile .brands .ct .detail_th {
-        margin: 0 0 15px 0; }
-        #wrapper_mobile .brands .ct .detail_th h3:nth-child(1) {
-          display: block; }
-      #wrapper_mobile .brands .ct .read-more {
-        width: 235px;
-        height: 42px;
-        margin: 0 auto;
-        text-align: center;
-        line-height: 40px; }
-        #wrapper_mobile .brands .ct .read-more a {
-          color: #266cd6; }
-          #wrapper_mobile .brands .ct .read-more a i {
-            margin: 0 0 0 10px; }
+    #wrapper_mobile .newsdetail-page .video_list {
+      border-bottom: none; }
+      #wrapper_mobile .newsdetail-page .video_list h2._top-head {
+        margin: 15px 0 0 0; }
+        #wrapper_mobile .newsdetail-page .video_list h2._top-head::after {
+          width: calc(100% - 150px); }
+      #wrapper_mobile .newsdetail-page .video_list ._item_ {
+        padding: 20px 0; }
   #wrapper_mobile .thong-tin-thanh-vien h1 {
     font-size: 20px;
     color: #434343;
@@ -2695,12 +2558,12 @@ img {
   padding: 20px 15px; }
   .page_videos ._item_ .img {
     padding: 0 15px 0 0;
-    width: 45%; }
+    width: 50%; }
     .page_videos ._item_ .img img {
       width: 100%;
       border: 1px solid #ccc; }
   .page_videos ._item_ .text {
-    width: calc(100% - 45%); }
+    width: calc(100% - 50%); }
     .page_videos ._item_ .text h4 {
       margin: -10px 0 10px 0; }
       .page_videos ._item_ .text h4 a {
@@ -2866,3 +2729,31 @@ section.breadcrumbs {
   .box-comments span.count {
     color: #000000;
     font-size: 18px; }
+
+.comments-review {
+  display: inline-block;
+  width: 100%; }
+  .comments-review .comments {
+    width: 100%;
+    border: none;
+    height: 100px;
+    outline: none;
+    padding: 20px;
+    border: 1px solid #999999; }
+  .comments-review p {
+    font-size: 16px;
+    padding: 10px 0; }
+    .comments-review p a {
+      font-weight: bold;
+      color: #000; }
+  .comments-review span.submit {
+    float: right; }
+    .comments-review span.submit input[type="submit"] {
+      width: 105px;
+      height: 48px;
+      background: #01c3ff;
+      text-align: center;
+      border: none;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 25px; }
