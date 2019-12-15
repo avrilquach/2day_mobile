@@ -18,33 +18,6 @@ $(document).ready(function() {
 	 $('.menu-mobile ul li').click(function(e){
 	 		$(this).toggleClass('current');
 	 });
-	 $('.main-banner').each(function () {
-	 		var el = $(this);
-			el.owlCarousel({
-					center: true,
-					loop: true,
-					nav: false,
-					dots: true,
-					items: 1,
-					autoplay: true,
-					animateOut: 'fadeOut',
-					animateIn: 'fadeInLeft',
-					smartSpeed: 200,
-					onDragged: callback
-			});
-			el.on('changed.owl.carousel', function(event) {
-			  var _color = $('.owl-item.center .item .color_bg').html();
-			  $('#header').css('background',_color);
-			  $('.banner').css("background-image","linear-gradient("+_color+", #fff)")
-			})
-	 });
-	 function callback()
-	 {
-	 	var _color = $('.owl-item.center .item .color_bg').html();
-			  $('#header').css('background',_color);
-			  $('.banner').css("background-image","linear-gradient("+_color+", #fff)")
-	 }
-	
 	 var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
         slidesPerView: 'auto',

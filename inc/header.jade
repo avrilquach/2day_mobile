@@ -1,18 +1,21 @@
 // Header
-header#header.pad40_30
+header#header.pad20_0
   .nav-top
     .container
-      .row.align-items-end.justify-content-between
-        .col-2
+      .row.align-items-center.justify-content-between
+        .col-2.row.align-items-center
           a.menu-click(href='javascript:void(0)')
-            img(src='img/i-bars.png', alt='')
-        .col-7
+            img(src='img/2day/icon.png', alt='')
+          a(href="#").video
+            i.fas.fa-video
+        .col-8
           a.logo-mobile(href='#')
-            img(src='img/logo.png', alt='')
-        .col-3.row.align-items-end.justify-content-between
-          .search
-            a(href='javascript:void(0)')
-              img(src='img/i-search.png', alt='')
-          .cart
-            img(src='img/i-cart.png', alt='')
-            span 5
+            img(src='img/2day/logo.jpg', alt='')
+        .col-2
+          .float-right.row.align-items-center
+            .search
+              a(href='javascript:void(0)')
+                i.fa.fa-search
+            .user
+              a(href="#")
+                i.fa.fa-user

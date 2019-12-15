@@ -123,25 +123,11 @@ img
     text-align: center
 #wrapper_mobile
   width: 100%
-  max-width: 640px
+  max-width: 750px
   margin: 0 auto
-  background-color: #ebebeb
-  &.bg_white
-    background-color: #fff
+  background-color: #FFF
   #header
-    background-color: #dbc2c6
-
-    &.header2
-      background-color: #0f8a0e
-
-      h2
-        font-size: 20px
-        color: #fff
-
-      i
-        font-size: 16px
-        color: #fff
-
+    background-color: #fff
     .logo-mobile
       padding: 0 10px
       display: block
@@ -150,35 +136,18 @@ img
     .menu-click
       width: 35px
       display: block
-
-    .search
-      width: 30px
-      padding: 0 3px
-      margin: 0 auto
-
-      img
-        width: 30px
-
-      form
-        display: none
-
-    .cart
-      width: 30px
-      padding: 0 5px
-      position: relative
-
-      span
-        position: absolute
-        top: -5px
-        right: -5px
-        background-color: #ef55a2
-        border-radius: 50%
-        font-size: 14px
-        width: 20px
-        height: 20px
-        text-align: center
-        color: #fff
-        line-height: 20px
+    .nav-top
+      i
+        color: #666666
+        font-size: 25px
+      .search
+        i
+          margin: 0 20px 0 0
+        form
+          display: none
+      .video
+        i
+          margin: 0 0 0 20px
 
   .banner .main-banner
     padding: 0 10px
@@ -220,20 +189,6 @@ img
         background-color: #3a4144
         display: block
         border-radius: 50%
-
-  .menu-home-top
-    background: #fff
-
-    ul li
-      width: 90px
-      text-align: center
-      padding: 0 15px
-
-      a span
-        display: block
-        margin: 5px 0 0 0
-        color: #696969
-
   .partner
     margin: 10px 0 0 0
     background: #fff
@@ -243,79 +198,6 @@ img
       text-align: center
       margin: 0 15px
       border: 1px solid #b7b7b7
-
-  .news
-    margin: 10px 0 0 0
-    background: #fff
-
-    ul li.swiper-slide
-      width: 300px
-      padding: 0 10px 0 0
-
-    .video
-      position: relative
-
-      &::before
-        position: absolute
-        background: rgba(0, 0, 0, 0.5)
-        top: 0
-        left: 0
-        width: 100%
-        height: 100%
-        content: ""
-        z-index: 3
-
-      .caption
-        position: absolute
-        bottom: 0
-        padding: 20px
-        color: #fff
-        z-index: 5
-
-        h3
-          font-size: 20px
-          text-transform: uppercase
-          margin: 0 0 5px 0
-
-        p
-          font-size: 15px
-
-      #video1
-        position: absolute
-        top: 15px
-        left: 15px
-        z-index: 5
-
-        i
-          font-size: 40px
-          color: #fff
-
-    .item
-      margin: 30px 0 0 0
-      display: -webkit-box
-      display: -ms-flexbox
-      display: flex
-      display: -webkit-flex
-
-      p
-        color: #212121
-        font-size: 20px
-
-      img
-        width: 150px
-        height: 90px
-        padding: 0 15px 0 0
-
-    a.read-more
-      width: 160px
-      height: 35px
-      border: 1px solid #37ace9
-      color: #37ace9
-      display: block
-      text-align: center
-      line-height: 33px
-      margin: 30px auto 0
-      border-radius: 20px
 
   .products
     background: #fff
@@ -2880,36 +2762,6 @@ img
     background: #fff
     padding: 0 0 120px 0
 
-    .footer-top .item
-      display: -webkit-box
-      display: -ms-flexbox
-      display: flex
-      display: -webkit-flex
-      -webkit-box-align: center
-      -ms-flex-align: center
-      align-items: center
-      border-bottom: 1px solid #ebebeb
-      padding: 15px 0
-
-      h4
-        font-size: 20px
-        font-weight: bold
-        margin: 0 10px 0 0
-
-        + img
-          margin: 0 10px 0 0
-
-      a
-        color: #ed2891
-        font-size: 20px
-        font-weight: bold
-
-      img
-        width: 30px
-        margin: 0 10px 0 0
-
-      h3
-        font-size: 20px
 
 .nav-fix-bt-detail
   position: fixed
@@ -2977,77 +2829,6 @@ img
         text-align: center
         font-size: 20px
         color: #fff
-
-.nav-fix-bt
-  position: fixed
-  bottom: 0
-  width: 100%
-  display: -webkit-box
-  display: -ms-flexbox
-  display: flex
-  display: -webkit-flex
-  -webkit-box-pack: justify
-  -ms-flex-pack: justify
-  justify-content: space-between
-  height: 60px
-  background-color: #ebebeb
-  z-index: 8
-  left: 0
-
-  .item-1
-    background: url("../img/h1.png") no-repeat center center
-
-  .item-2
-    background: url("../img/h2.png") no-repeat center center
-
-  .item-3
-    background: url("../img/h3.png") no-repeat center center
-
-  .item-4
-    background: url("../img/h4.png") no-repeat center center
-
-  .wh
-    width: 40px
-    height: 40px
-    margin: 0 auto
-
-  .item
-    width: 25%
-    text-align: center
-    padding: 12px 0
-
-    i
-      color: #7b7b7b
-      font-size: 16px
-
-    span
-      display: block
-      font-size: 12px
-      color: #212121
-
-    &:hover, &.active
-      background: #0f8a0e
-
-    &:hover .item-1, &.active .item-1
-      background: url("../img/h1_hover.png") no-repeat center center
-
-    &:hover .item-2, &.active .item-2
-      background: url("../img/h2_hover.png") no-repeat center center
-
-    &:hover .item-3, &.active .item-3
-      background: url("../img/h3_hover.png") no-repeat center center
-
-    &:hover .item-4, &.active .item-4
-      background: url("../img/h4_hover.png") no-repeat center center
-
-    &:hover
-      span, i
-        color: #fff
-
-    &.active
-      span, i
-        color: #fff
-
 .loc-sp
   background-color: #fff
   position: fixed
