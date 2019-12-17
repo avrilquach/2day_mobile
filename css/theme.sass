@@ -149,46 +149,6 @@ img
         i
           margin: 0 0 0 20px
 
-  .banner .main-banner
-    padding: 0 10px
-
-    .owl-stage-outer
-      background: #fff
-      border-radius: 5px
-
-  .owl-dots
-    position: absolute
-    bottom: 10px
-    right: 0
-    left: 0
-    margin: 0 auto
-    width: 100%
-    display: -webkit-box
-    display: -ms-flexbox
-    display: flex
-    display: -webkit-flex
-    -webkit-box-align: center
-    -ms-flex-align: center
-    align-items: center
-    -webkit-box-pack: center
-    -ms-flex-pack: center
-    justify-content: center
-
-    .owl-dot
-      margin: 0 5px 0 0
-
-      &:last-child
-        margin: 0
-
-      &.active span
-        background-color: #0f890e
-
-      span
-        height: 10px
-        width: 10px
-        background-color: #3a4144
-        display: block
-        border-radius: 50%
   
   .products
     background: #fff
@@ -1801,7 +1761,7 @@ img
 
         img
           display: block
-          margin: 10px auto 0
+          margin: 10px auto
 
       .share
         padding: 20px 0
@@ -1826,6 +1786,22 @@ img
           width: calc(100% - 150px)
       ._item_
         padding: 20px 0
+    &.video_detail
+      .detail
+        margin: 0 0 10px 0
+        .head
+          border-bottom: 1px solid #d6d6d6
+          margin: 0 0 20px 0
+      .video_list
+        border-bottom: 1px solid #dbdbdb   
+        h2._top-head
+          &::after
+            width: 70px
+            right: 0
+        ._item_ 
+          .text 
+            span.date
+              display: block
   .thong-tin-thanh-vien
     h1
       font-size: 20px
@@ -2857,51 +2833,6 @@ img
       font-size: 20px
       text-transform: uppercase
       display: block
-.main-bang-gia 
-  .owl-dots
-    bottom: -30px !important
-  ._item
-    display: -webkit-box
-    display: -ms-flexbox
-    display: flex
-    display: -webkit-flex
-    padding: 20px 0
-    -webkit-box-pack: justify
-    -ms-flex-pack: justify
-    justify-content: space-between
-    border-bottom: 1px solid #f3f3f3
-
-  ._left
-    padding: 0 20px 0 0
-
-    h4
-      font-size: 20px
-      color: #000
-      margin: 0 0 10px 0
-
-    p
-      padding: 0
-      font-size: 16px
-      text-align: left
-
-  ._right
-    text-align: right
-
-    span.price
-      display: block
-      font-size: 20px
-      margin: 0 0 10px 0
-
-    a
-      width: 80px
-      height: 25px
-      border-radius: 20px
-      background: #0f890e
-      display: block
-      color: #fff
-      text-align: center
-      font-size: 12px
-      line-height: 25px
 .section-map 
   #block-map
     width: 100%
@@ -2949,7 +2880,7 @@ img
     padding: 0 0 10px 0
     border-bottom: 1px solid #dbdbdb
     h2._top-head
-      font-size: 20px
+      font-size: 25px
       position: relative
       text-transform: uppercase
       margin: 15px 15px 0 15px
@@ -3084,6 +3015,95 @@ img
         color: #01c3ff
         &.date
           color: #000
+  .main-banner
+    .item
+      display: block
+      background-position: top center
+      margin: 0
+      .caption_
+        padding: 0 15px
+        h1
+          font-size: 30px
+          color: #000
+          font-weight: bold
+
+        h2
+          font-size: 20px
+          color: #000
+          margin: 0 0 10px 0
+
+        p
+          font-size: 16px
+          color: #000
+
+      .popup-youtube_
+        width: 10%
+        position: absolute
+        right: 200px
+        top: 35%
+
+    .owl-nav
+      position: absolute
+      top: 45%
+      width: 100%
+
+      i
+        color: #fff
+        font-size: 40px
+
+      .owl-prev
+        left: 50px
+        position: absolute
+
+      .owl-next
+        right: 50px
+        position: absolute
+
+    .owl-dots
+      position: absolute
+      bottom: 150px
+      right: 0
+      left: 0
+      margin: 0 auto
+      width: 100%
+      display: -webkit-box
+      display: -ms-flexbox
+      display: flex
+      display: -webkit-flex
+      -webkit-box-align: center
+      -ms-flex-align: center
+      align-items: center
+      -webkit-box-pack: center
+      -ms-flex-pack: center
+      justify-content: center
+
+      .owl-dot
+        margin: 0 10px 0 0
+
+        &:last-child
+          margin: 0
+
+        &.active span
+          position: relative
+
+          &::before
+            content: ""
+            background-color: transparent
+            width: 16px
+            height: 16px
+            border: 1px solid #fff
+            display: block
+            border-radius: 50%
+            position: absolute
+            left: -3px
+            top: -3px
+
+        span
+          height: 10px
+          width: 10px
+          background-color: #fff
+          display: block
+          border-radius: 50%
 section.breadcrumbs
   background: #f3f3f3
 

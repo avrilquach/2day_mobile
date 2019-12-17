@@ -1,0 +1,53 @@
+doctype html
+html
+  include inc/head.jade
+  body.m
+    #wrapper_mobile
+      include inc/header.jade
+      section.breadcrumbs.pad10_0
+        .container
+          .row
+            .col-lg-12
+              ul
+                li
+                  a(href='#')
+                    i.fas.fa-home
+                    | Trang chủ
+                li
+                  a(href='#') Đời sống   
+
+      .page_videos
+        // Banner
+        section.banner
+          .owl-carousel.owl-theme.main-banner
+            -for(i=0;i<3;i++)
+              .item
+                .img
+                  img(src='img/2day/img3.jpg', alt='')
+                  a.popup-youtube(href='#')
+                    img(src='img/2day/icon.png', alt='')
+                .caption_
+                  h1 Lorem Ipsum
+                  h2 Lorem Ipsum is simply dumm
+                  p Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                       
+        section.video_list
+          -for(i=0;i<4;i++)
+            .item.style3
+              .img
+                img(src='img/2day/img3.jpg', alt='')
+                a.popup-youtube(href='#')
+                  img(src='img/2day/icon.png', alt='')
+              .caption
+                h3 Lorem Ipsum is simply dummy text of the printing and typesetting....
+                span 15k view 
+                  span.date -  Cách đây 4 tháng
+
+      include inc/footer.jade
+    script(type='text/javascript', src='js/jquery.min.js')
+    script(type='text/javascript', src='js/bootstrap.js')
+    script(type='text/javascript', src='js/owl.carousel.min.js')
+    script(type='text/javascript', src='js/jquery.lazy.js')
+    script(type='text/javascript', src='js/swiper.js')
+    script(type='text/javascript', src='js/jquery.magnific-popup.js')
+    script(type='text/javascript', src='js/main.js')

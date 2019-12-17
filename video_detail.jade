@@ -1,0 +1,70 @@
+doctype html
+html
+  include inc/head.jade
+  body.m
+    #wrapper_mobile
+      include inc/header.jade
+      section.breadcrumbs.pad10_0
+        .container
+          .row
+            .col-lg-12
+              ul
+                li
+                  a(href='#')
+                    i.fas.fa-home
+                    | Trang chủ
+                li
+                  a(href='#') Đời sống   
+      ._content_video_player
+        img(src="img/2day/Video_Detail_1.jpg" alt="")
+      .video_detail.newsdetail-page.page_videos
+        .detail
+          h1 5 Essential Rules to a Healthy and Happy Life
+          // Details
+          .head
+            .text
+              span.date
+                | 684.776 lượt xem 
+                span Đăng ngày 26-08-2019 
+          .ctent_detail
+            p
+              | What’s possible in a week? If you dedicated seven days to the achievement of one goal, how ambitious tyou make this goal? These were the questions that the multilingual friends Katy and Sara posed themselves when they determined to learn English in one week, to prove that it can be done and anyone can do it with the right methods. They would attempt to liberate themselves from the distractions and responsibilities of modern-day life in order to cram eight hours of study time and I was observing some of the world’s most capable language learners at work.
+            p
+              img.lazy(alt='', src='img/2day/detail.jpg')
+            p
+              | What’s possible in a week? If you dedicated seven days to the achievement of one goal, how ambitious tyou make this goal? These were the questions that the multilingual friends Katy and Sara posed themselves when they determined to learn English in one week, to prove that it can be done and anyone can do it with the right methods. They would attempt to liberate themselves from the distractions and responsibilities of modern-day life in order to cram eight hours of study time and I was observing some of the world’s most capable language learners at work.
+        section.banner_ads
+          a(href="#")
+            img(src='img/2day/banner__ads.jpg',alt='')
+        section.video_list
+          h2._top-head Video hot nhất
+          -for(i=0;i<2;i++)
+            ._item_
+              .img
+                img(src='img/2day/img1.jpg', alt='')
+              .text
+                h4
+                  a(href='#') Lorem Ipsum is simply dummy text dummy text
+                span
+                  | Đời sống 
+                  span.date 123K Lượt xem
+        section.video_list
+          h2._top-head Video liên quan
+          -for(i=0;i<2;i++)
+            ._item_
+              .img
+                img(src='img/2day/img1.jpg', alt='')
+              .text
+                h4
+                  a(href='#') Lorem Ipsum is simply dummy text dummy text
+                span
+                  | Đời sống 
+                  span.date 123K Lượt xem
+      include inc/footer.jade
+    script(type='text/javascript', src='js/jquery.min.js')
+    script(type='text/javascript', src='js/bootstrap.js')
+    script(type='text/javascript', src='js/owl.carousel.min.js')
+    script(type='text/javascript', src='js/jquery.lazy.js')
+    script(type='text/javascript', src='js/swiper.js')
+    script(type='text/javascript', src='js/jquery.magnific-popup.js')
+    script(type='text/javascript', src='js/main.js')
