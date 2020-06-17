@@ -1,0 +1,165 @@
+doctype html
+html
+  include inc/head.jade
+  body.m
+    #wrapper_mobile
+      include inc/header.jade
+      .page_videos
+        section.video_list
+          .item
+            .img
+              img(src='img/2day/img3.jpg', alt='')
+              a.popup-youtube(href='#')
+                img(src='img/2day/icon.png', alt='')
+            .caption
+              h3 Sơn Tùng tại Sky Tour TP.HCM: Caó gì trao hết...
+              p Trưa ngày 28/7, sự kiện Meet&Greet của Sky Tour 2019 đã chính thức diễn ra tại TP.HCM. Tham gia sự kiện này, khán giả đã được giao lưu thân mật với Sơn Tùng M-TP, xem trước chương trình tổng duyệt và nhận poster có
+        section.video_list
+          -for(i=0;i<2;i++)
+            ._item_
+              .img
+                img(src='img/2day/img1.jpg', alt='')
+              .text
+                h4
+                  a(href='#') Lorem Ipsum is simply dummy text dummy text
+        section.video_list
+          .item.style1
+            h3 Sơn Tùng tại Sky Tour TP.HCM: Caó gì trao hết...
+            .img
+              img(src='img/2day/img3.jpg', alt='')
+              a.popup-youtube(href='#')
+                img(src='img/2day/icon.png', alt='')
+            .caption
+              p Trưa ngày 28/7, sự kiện Meet&Greet của Sky Tour 2019 đã chính thức diễn ra tại TP.HCM. Tham gia sự kiện này, khán giả đã được giao lưu thân mật với Sơn Tùng M-TP, xem trước chương trình tổng duyệt và nhận poster có
+        section.video_list
+          .item.style1
+            h3 Sơn Tùng tại Sky Tour TP.HCM: Caó gì trao hết...
+            .img
+              img(src='img/2day/img3.jpg', alt='')
+              a.popup-youtube(href='#')
+                img(src='img/2day/icon.png', alt='')
+            .caption
+              p Trưa ngày 28/7, sự kiện Meet&Greet của Sky Tour 2019 đã chính thức diễn ra tại TP.HCM. Tham gia sự kiện này, khán giả đã được giao lưu thân mật với Sơn Tùng M-TP, xem trước chương trình tổng duyệt và nhận poster có
+        section.video_list
+          .swiper-container
+            ul.swiper-wrapper
+              -for(i=0;i<4;i++)
+                li.swiper-slide
+                  a.item(href='#').style2
+                    .img
+                      img(src='img/2day/img1.jpg', alt='')
+                    .caption
+                      h3 Sơn Tùng tại Sky Tour TP.HCM: Caó gì trao hết...
+        section.banner_ads
+          a(href="#")
+            img(src='img/2day/banner__ads.jpg',alt='')
+        section.video_list
+          -for(i=0;i<4;i++)
+            .item.style3
+              .img
+                img(src='img/2day/img3.jpg', alt='')
+              .caption
+                h3 
+                  a(href="#") Sơn Tùng tại Sky Tour TP.HCM: Caó gì trao hết...
+                p Trưa ngày 28/7, sự kiện Meet&Greet của Sky Tour 2019 đã chính thức diễn ra tại TP.HCM. Tham gia sự kiện này, khán giả đã được giao lưu thân mật với Sơn Tùng M-TP, xem trước chương trình tổng duyệt và nhận poster có
+                span
+                  | Bởi 
+                  strong Amin  
+                  | -  
+                  span.date 1 giờ trước
+        section.video_list
+          h2._top-head Đời sống 
+          .item.style3
+            .img
+              img(src='img/2day/img3.jpg', alt='')
+            .caption
+              h3 
+                a(href="#") Sơn Tùng tại Sky Tour TP.HCM: Caó gì trao hết...
+              p Trưa ngày 28/7, sự kiện Meet&Greet của Sky Tour 2019 đã chính thức diễn ra tại TP.HCM. Tham gia sự kiện này, khán giả đã được giao lưu thân mật với Sơn Tùng M-TP, xem trước chương trình tổng duyệt và nhận poster có
+              span
+                | Bởi 
+                strong Amin  
+                | -  
+                span.date 1 giờ trước
+        section.video_list
+          -for(i=0;i<2;i++)
+            ._item_
+              .img
+                img(src='img/2day/img1.jpg', alt='')
+              .text
+                h4
+                  a(href='#') Lorem Ipsum is simply dummy text dummy text
+                span
+                  | Đời sống 
+                  span.date - 1 ngày trước
+        section.video_list
+          h2._top-head Làm đẹp
+          .item.style3
+            .img
+              img(src='img/2day/img3.jpg', alt='')
+            .caption
+              h3 
+                a(href="#") Sơn Tùng tại Sky Tour TP.HCM: Caó gì trao hết...
+              p Trưa ngày 28/7, sự kiện Meet&Greet của Sky Tour 2019 đã chính thức diễn ra tại TP.HCM. Tham gia sự kiện này, khán giả đã được giao lưu thân mật với Sơn Tùng M-TP, xem trước chương trình tổng duyệt và nhận poster có
+              span
+                | Bởi 
+                strong Amin  
+                | -  
+                span.date 1 giờ trước
+        section.video_list
+          -for(i=0;i<2;i++)
+            ._item_
+              .img
+                img(src='img/2day/img1.jpg', alt='')
+              .text
+                h4
+                  a(href='#') Lorem Ipsum is simply dummy text dummy text
+                span
+                  | Làm đẹp 
+                  span.date - 1 ngày trước 
+      include inc/footer.jade
+      .box_login_register_
+        .tab-content
+          .click_right
+            a.search_
+              i.fa.fa-search
+            a.close_
+              i.fas.fa-times
+          #login.tab-pane.active
+            h3 Đăng nhập
+            form
+              input.form_text(type='text', name='name', placeholder='Tên đăng nhập (*)')
+              input.form_text(type='password', name='password', placeholder='Mật khẩu (*)')
+              .middle_.row.align-items-center.justify-content-between
+                .remember_pass
+                  input(type='checkbox')
+                  span.checkmark
+                  | Nhớ mật khẩu
+                .forget_pass
+                  a(href='#') Quên mật khẩu?
+              .bottom_
+                input(type='submit', value='Đăng nhập')
+                span Hoặc
+                .social_
+                  a#login_fb(href='#')
+                    img(src='img/2day/btn_fb.jpg', alt='')
+                  a#login_gg(href='#')
+                    img(src='img/2day/btn_gg.jpg', alt='')
+            a.open_register Đăng ký
+          #register.tab-pane
+            h3 Đăng ký
+            form
+              input.form_text(type='text', name='name', placeholder='Tên đăng nhập (*)')
+              input.form_text(type='email', name='email', placeholder='Email (*)')
+              input.form_text(type='password', name='password', placeholder='Mật khẩu (*)')
+              input.form_text(type='password', name='recoverpassword', placeholder='Nhập lại mật khẩu (*)')
+              .bottom_.row.align-items-center.justify-content-center
+                input(type='submit', value='Đăng ký')
+
+    script(type='text/javascript', src='js/jquery.min.js')
+    script(type='text/javascript', src='js/bootstrap.js')
+    script(type='text/javascript', src='js/owl.carousel.min.js')
+    script(type='text/javascript', src='js/jquery.lazy.js')
+    script(type='text/javascript', src='js/swiper.js')
+    script(type='text/javascript', src='js/jquery.magnific-popup.js')
+    script(type='text/javascript', src='js/main.js')

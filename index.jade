@@ -4,119 +4,308 @@ html
   body.m
     #wrapper_mobile
       include inc/header.jade
-      .page_videos
-        section.video_list
-          .item
-            .img
-              img(src='img/2day/img3.jpg', alt='')
-              a.popup-youtube(href='#')
-                img(src='img/2day/icon.png', alt='')
+      #main-trending-2
+        a(href='#').item-new
+          .inner
+            img(src='img/2day/hinh4.jpg', alt='')
             .caption
-              h3 Sơn Tùng tại Sky Tour TP.HCM: Caó gì trao hết...
-              p Trưa ngày 28/7, sự kiện Meet&Greet của Sky Tour 2019 đã chính thức diễn ra tại TP.HCM. Tham gia sự kiện này, khán giả đã được giao lưu thân mật với Sơn Tùng M-TP, xem trước chương trình tổng duyệt và nhận poster có
-        section.video_list
-          -for(i=0;i<2;i++)
-            ._item_
-              .img
-                img(src='img/2day/img1.jpg', alt='')
-              .text
-                h4
-                  a(href='#') Lorem Ipsum is simply dummy text dummy text
-        section.video_list
-          .item.style1
-            h3 Sơn Tùng tại Sky Tour TP.HCM: Caó gì trao hết...
-            .img
-              img(src='img/2day/img3.jpg', alt='')
-              a.popup-youtube(href='#')
-                img(src='img/2day/icon.png', alt='')
-            .caption
-              p Trưa ngày 28/7, sự kiện Meet&Greet của Sky Tour 2019 đã chính thức diễn ra tại TP.HCM. Tham gia sự kiện này, khán giả đã được giao lưu thân mật với Sơn Tùng M-TP, xem trước chương trình tổng duyệt và nhận poster có
-        section.video_list
-          .item.style1
-            h3 Sơn Tùng tại Sky Tour TP.HCM: Caó gì trao hết...
-            .img
-              img(src='img/2day/img3.jpg', alt='')
-              a.popup-youtube(href='#')
-                img(src='img/2day/icon.png', alt='')
-            .caption
-              p Trưa ngày 28/7, sự kiện Meet&Greet của Sky Tour 2019 đã chính thức diễn ra tại TP.HCM. Tham gia sự kiện này, khán giả đã được giao lưu thân mật với Sơn Tùng M-TP, xem trước chương trình tổng duyệt và nhận poster có
-        section.video_list
-          .swiper-container
-            ul.swiper-wrapper
-              -for(i=0;i<4;i++)
-                li.swiper-slide
-                  a.item(href='#').style2
-                    .img
-                      img(src='img/2day/img1.jpg', alt='')
-                    .caption
-                      h3 Sơn Tùng tại Sky Tour TP.HCM: Caó gì trao hết...
-        section.banner_ads
-          a(href="#")
-            img(src='img/2day/banner__ads.jpg',alt='')
-        section.video_list
-          -for(i=0;i<4;i++)
-            .item.style3
-              .img
-                img(src='img/2day/img3.jpg', alt='')
+              .cate
+                span.name.red du lịch
+                span.time Cách đây 3 giờ
+              h3 Lorem Ipsum is simply dummy text of the printing and typesetting
+      .container
+        #main-trending-2
+          .div-row
+            a(href='#').item-new.item-new-1
+              .inner
+                img(src='img/2day/hinh5.jpg', alt='')
+                .caption
+                  .cate
+                    span.name.green giải trí
+                    span.time Cách đây 3 giờ
+                  h3.small Lorem Ipsum is simply dummy text of the printing and typesetting
+          .div-row
+            a(href='#').item-new.item-new-2
+              .inner
+                img(src='img/2day/hinh5.jpg', alt='')
+                .caption
+                  .cate
+                    span.name.purple làm đẹp 
+                    span.time Cách đây 3 giờ
+                  h3.small Lorem Ipsum is simply dummy text of the printing and typesetting
+        #banner_ads
+          a(href='#').item-new
+            .inner
+              img(src='img/2day/hinh7.jpg', alt='')
               .caption
-                h3 
-                  a(href="#") Sơn Tùng tại Sky Tour TP.HCM: Caó gì trao hết...
-                p Trưa ngày 28/7, sự kiện Meet&Greet của Sky Tour 2019 đã chính thức diễn ra tại TP.HCM. Tham gia sự kiện này, khán giả đã được giao lưu thân mật với Sơn Tùng M-TP, xem trước chương trình tổng duyệt và nhận poster có
-                span
-                  | Bởi 
-                  strong Amin  
-                  | -  
-                  span.date 1 giờ trước
-        section.video_list
-          h2._top-head Đời sống 
-          .item.style3
+                .cate
+                  span.name.orange thể thao
+                  span.time Cách đây 3 giờ
+                h3.small Lorem Ipsum is simply dummy text of the printing and typesetting
+        #main-trending
+          h2 
+            span trending
+          .owl-carousel.owl-theme.main-trending
+            -for(i=0;i<3;i++)
+              .item
+                a(href='#').children
+                  .img
+                    img(src='img/2day/hinh1.jpg', alt='')
+                  .cate
+                    span.name.red du lịch
+                    span.time Cách đây 3 giờ
+                  .title
+                    span 1
+                    h3 Lorem Ipsum is simply dummy text of the printing and typesetting
+                a(href='#').children
+                  .img
+                    img(src='img/2day/hinh2.jpg', alt='')
+                  .cate
+                    span.name.green giải trí
+                    span.time Cách đây 3 giờ
+                  .title
+                    span 2
+                    h3 Lorem Ipsum is simply dummy text of the printing and typesetting
+                a(href='#').children
+                  .img
+                    img(src='img/2day/hinh3.jpg', alt='')
+                  .cate
+                    span.name.blue xã hội
+                    span.time Cách đây 3 giờ
+                  .title
+                    span 3
+                    h3 Lorem Ipsum is simply dummy text of the printing and typesetting
+        .trending-week
+          h2 
+            span trending tuần này
+          ul#myTab.nav.nav-tabs(role='tablist')
+            li.nav-item
+              a#home-tab.nav-link.active(data-toggle='tab', href='#all', role='tab', aria-controls='all', aria-selected='true') tất cả
+            li.nav-item
+              a#profile-tab.nav-link(data-toggle='tab', href='#entertainment', role='tab', aria-controls='entertainment', aria-selected='false') giải trí
+            li.nav-item
+              a#contact-tab.nav-link(data-toggle='tab', href='#beauty', role='tab', aria-controls='beauty', aria-selected='false') làm đẹp
+            li.nav-item
+              a#contact-tab.nav-link(data-toggle='tab', href='#fashion', role='tab', aria-controls='fashion', aria-selected='false') thời trang
+          #myTabContent.tab-content
+            #all.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='all-tab')
+              .div-row 
+                a(href='#').item-new
+                  .inner
+                    img(src='img/2day/hinh16.jpg', alt='')
+                    .caption
+                      .cate
+                        span.name.red du lịch
+                        span.time Cách đây 3 giờ
+                      h3 Lorem Ipsum is simply dummy text of the printing and typesetting
+              .div-row
+                a(href='#').item-new2
+                  img(src='img/2day/hinh18.jpg', alt='')
+                  .caption
+                    h3 Lorem Ipsum is simply dummy text of the printing and typesetting
+                    span.time 12/05/2020
+              .div-row
+                a(href='#').item-new2
+                  img(src='img/2day/hinh18.jpg', alt='')
+                  .caption
+                    h3 Lorem Ipsum is simply dummy text of the printing and typesetting
+                    span.time 12/05/2020
+            #entertainment.tab-pane.fade(role='tabpanel', aria-labelledby='entertainment-tab') ...
+            #beauty.tab-pane.fade(role='tabpanel', aria-labelledby='beauty-tab') ...
+            #fashion.tab-pane.fade(role='tabpanel', aria-labelledby='fashion-tab') ...
+        .beauty-news
+            h2
+              span Làm đẹp
+            .div-row
+              a(href='#').item-new2
+                img(src='img/2day/hinh18.jpg', alt='')
+                .caption
+                  h3 Lorem Ipsum is simply dummy text of the printing and typesetting
+                  span.time 12/05/2020
+                  p Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+            .div-row
+              a(href='#').item-new2
+                img(src='img/2day/hinh18.jpg', alt='')
+                .caption
+                  h3 Lorem Ipsum is simply dummy text of the printing and typesetting
+                  span.time 12/05/2020
+            .div-row
+              a(href='#').item-new2
+                img(src='img/2day/hinh18.jpg', alt='')
+                .caption
+                  h3 Lorem Ipsum is simply dummy text of the printing and typesetting
+                  span.time 12/05/2020
+            .div-row
+              a(href='#').item-new2
+                img(src='img/2day/hinh18.jpg', alt='')
+                .caption
+                  h3 Lorem Ipsum is simply dummy text of the printing and typesetting
+                  span.time 12/05/2020
+      .video
+        .container
+          h2 Video
+          .owl-carousel.owl-theme.main-video
+            -for(i=0;i<8;i++)
+              a(href="#").item
+                img(src='img/2day/hinh22.png', alt='')
+                .arrow
+                  img(src='img/2day/svg/arrow.svg', alt='')
+                .caption
+                  h4 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  span.time 12/05/2020
+      .container
+        .beauty-news
+          h2
+            span Giải trí
+          .div-row
+            a(href='#').item-new2
+              img(src='img/2day/hinh18.jpg', alt='')
+              .caption
+                h3 Lorem Ipsum is simply dummy text of the printing and typesetting
+                span.time 12/05/2020
+                p Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+          .div-row
+            a(href='#').item-new2
+              img(src='img/2day/hinh18.jpg', alt='')
+              .caption
+                h3 Lorem Ipsum is simply dummy text of the printing and typesetting
+                span.time 12/05/2020
+          .div-row
+            a(href='#').item-new2
+              img(src='img/2day/hinh18.jpg', alt='')
+              .caption
+                h3 Lorem Ipsum is simply dummy text of the printing and typesetting
+                span.time 12/05/2020
+          .div-row
+            a(href='#').item-new2
+              img(src='img/2day/hinh18.jpg', alt='')
+              .caption
+                h3 Lorem Ipsum is simply dummy text of the printing and typesetting
+                span.time 12/05/2020
+           
+        .newest2
+          h2
+            span tin mới nhất
+          .div-row
+            .content-left
+              img(src='img/2day/hinh23.jpg', alt='')
+              span.cate.red Du lịch 
+            .content-right
+              a(href='#').item-new2
+                .caption
+                  h3 Lorem Ipsum is simply dummy text of the printing and typesetting
+                  span.time 12/05/2020
+                  p Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+          .div-row
+            .content-left
+              img(src='img/2day/hinh23.jpg', alt='')
+              span.cate.green Giải trí
+            .content-right
+              a(href='#').item-new2
+                .caption
+                  h3 Lorem Ipsum is simply dummy text of the printing and typesetting
+                  span.time 12/05/2020
+                  p Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+          .div-row
+            .content-left
+              img(src='img/2day/hinh23.jpg', alt='')
+              span.cate.blue Xã hội
+            .content-right
+              a(href='#').item-new2
+                .caption
+                  h3 Lorem Ipsum is simply dummy text of the printing and typesetting
+                  span.time 12/05/2020
+                  p Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+          .div-row
+            .content-left
+              img(src='img/2day/hinh23.jpg', alt='')
+              span.cate.purple làm đẹp
+            .content-right
+              a(href='#').item-new2
+                .caption
+                  h3 Lorem Ipsum is simply dummy text of the printing and typesetting
+                  span.time 12/05/2020
+                  p Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+          .div-row
+            .content-left
+              img(src='img/2day/hinh23.jpg', alt='')
+              span.cate.orange thể thao
+            .content-right
+              a(href='#').item-new2
+                .caption
+                  h3 Lorem Ipsum is simply dummy text of the printing and typesetting
+                  span.time 12/05/2020
+                  p Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+        .banner-right
+          a(href='#')
+            img(src='img/2day/hinh10.jpg', alt='')
+        .newest
+          h2 
+            span xem nhiều nhất
+          a.item(href='#')
             .img
-              img(src='img/2day/img3.jpg', alt='')
-            .caption
-              h3 
-                a(href="#") Sơn Tùng tại Sky Tour TP.HCM: Caó gì trao hết...
-              p Trưa ngày 28/7, sự kiện Meet&Greet của Sky Tour 2019 đã chính thức diễn ra tại TP.HCM. Tham gia sự kiện này, khán giả đã được giao lưu thân mật với Sơn Tùng M-TP, xem trước chương trình tổng duyệt và nhận poster có
-              span
-                | Bởi 
-                strong Amin  
-                | -  
-                span.date 1 giờ trước
-        section.video_list
-          -for(i=0;i<2;i++)
-            ._item_
-              .img
-                img(src='img/2day/img1.jpg', alt='')
-              .text
-                h4
-                  a(href='#') Lorem Ipsum is simply dummy text dummy text
-                span
-                  | Đời sống 
-                  span.date - 1 ngày trước
-        section.video_list
-          h2._top-head Làm đẹp
-          .item.style3
+              img(src='img/2day/hinh11.jpg', alt='').
+            .text
+              span.cate.red du lịch
+              h4 Lorem Ipsum is simply dummy text of the printing
+              span.time 12/05/2020
+          a.item(href='#')
             .img
-              img(src='img/2day/img3.jpg', alt='')
-            .caption
-              h3 
-                a(href="#") Sơn Tùng tại Sky Tour TP.HCM: Caó gì trao hết...
-              p Trưa ngày 28/7, sự kiện Meet&Greet của Sky Tour 2019 đã chính thức diễn ra tại TP.HCM. Tham gia sự kiện này, khán giả đã được giao lưu thân mật với Sơn Tùng M-TP, xem trước chương trình tổng duyệt và nhận poster có
-              span
-                | Bởi 
-                strong Amin  
-                | -  
-                span.date 1 giờ trước
-        section.video_list
-          -for(i=0;i<2;i++)
-            ._item_
-              .img
-                img(src='img/2day/img1.jpg', alt='')
-              .text
-                h4
-                  a(href='#') Lorem Ipsum is simply dummy text dummy text
-                span
-                  | Làm đẹp 
-                  span.date - 1 ngày trước 
+              img(src='img/2day/hinh12.jpg', alt='').
+            .text
+              span.cate.blue xã hội
+              h4 Lorem Ipsum is simply dummy text of the printing
+              span.time 12/05/2020
+          a.item(href='#')
+            .img
+              img(src='img/2day/hinh13.jpg', alt='').
+            .text
+              span.cate.orange thể thao
+              h4 Lorem Ipsum is simply dummy text of the printing
+              span.time 12/05/2020
+          a.item(href='#')
+            .img
+              img(src='img/2day/hinh14.jpg', alt='').
+            .text
+              span.cate.green giải trí
+              h4 Lorem Ipsum is simply dummy text of the printing
+              span.time 12/05/2020
+          a.item(href='#')
+            .img
+              img(src='img/2day/hinh15.jpg', alt='')
+            .text
+              span.cate.purple làm đẹp
+              h4 Lorem Ipsum is simply dummy text of the printing
+              span.time 12/05/2020
+          a.item(href='#')
+            .img
+              img(src='img/2day/hinh11.jpg', alt='').
+            .text
+              span.cate.red du lịch
+              h4 Lorem Ipsum is simply dummy text of the printing
+              span.time 12/05/2020
+          a.item(href='#')
+            .img
+              img(src='img/2day/hinh12.jpg', alt='').
+            .text
+              span.cate.blue xã hội
+              h4 Lorem Ipsum is simply dummy text of the printing
+              span.time 12/05/2020
+          a.item(href='#')
+            .img
+              img(src='img/2day/hinh13.jpg', alt='').
+            .text
+              span.cate.orange thể thao
+              h4 Lorem Ipsum is simply dummy text of the printing
+              span.time 12/05/2020
+          a.item(href='#')
+            .img
+              img(src='img/2day/hinh14.jpg', alt='').
+            .text
+              span.cate.green giải trí
+              h4 Lorem Ipsum is simply dummy text of the printing
+              span.time 12/05/2020
+          a.item(href='#')
       include inc/footer.jade
     script(type='text/javascript', src='js/jquery.min.js')
     script(type='text/javascript', src='js/bootstrap.js')

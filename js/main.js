@@ -1,90 +1,125 @@
-$(document).ready(function() {
-	$('.lazy').lazy();
-	 $('.close_mobile').click(function(e)
-	 {
-	 		$('.menu-mobile').toggleClass('active');
-	 		$('body').toggleClass('active');
-	 });
-	 $('.menu-click').click(function(e)
-	 {
-	 		$('.menu-mobile').toggleClass('active');
-	 		$('body').toggleClass('active');
-	 });
-	 $('.menu-mobile ul li').click(function(e){
-	 		$(this).toggleClass('current');
-	 });
-	 var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        slidesPerView: 'auto',
-        paginationClickable: true,
-        spaceBetween: 0
-    });
-	 var owl = $('#big');
-		owl.owlCarousel({
-		  autoplay: 2000,
-		  items:1,
-		  loop: true,
-		  onInitialized  : counter,
-		  onTranslated : counter,
-		  dots: false
-		});
-	 function counter(event) {
-	   var element   = event.target;        
-	    var items     = event.item.count;   
-	    var item      = event.item.index + 1;     
-	  if(item > items) {
-	    item = item - items
-	  }
-	  $('#counter').html(""+item+"/"+items)
-	}
-	$(".info_detailp .ctent").slice(0, 1).css("display","flex");
-	$('.read-more a').click(function(e){
-		var _this = $(this).parent().parent().parent().parent();
-		_this.find(".ctent:hidden").slice(0, 1).css("display","flex");
-		 $('html,body').animate({
-            scrollTop: $(this).offset().top-(315)
-        }, 1500);
-	});
-	$('.choose_ite a').click(function(e){
-		var _this = $(this).parent();
-		_this.find('.choose_ite_box').toggleClass('active');
-	});
-	$('.filter ul li').click(function(e){
-		$('.loc-sp').toggleClass('active');
-		$('body').toggleClass('active');
-	});
-	$('.close_locsp').click(function(e){
-		$('.loc-sp').toggleClass('active');
-		$('body').toggleClass('active');
-	});
-	$('.loc-sp ul li').click(function(e){
-		$('.loc-sp ul li').removeClass('current');
-		$(this).addClass('current');
-	});
-	$('.click').click(function(e){
-		$(this).parent().find('.box').toggleClass('current');
-	});
-	$('.account-info .item h4').click(function(e)
-	{
-		$(this).parent().find('ul').toggleClass('current');
-		$(this).parent().find('h4').toggleClass('current');
-	});
-	$('.search a').click(function(e){
-		$('.form-box-search').show();
-	});
-	$('.form-box-search a.cancelSearch').click(function(e){
-		$('.form-box-search').hide();
-	});
+$(document).ready(function () {
 	var banner = $('.main-banner');
 	banner.owlCarousel({
-			loop: true,
-			nav: false,
-			dots: true,
-			items: 1,
-			nav: false,
-			autoplay: true,
-			animateOut: 'fadeOut',
-			animateIn: 'fadeInLeft',
-			smartSpeed: 200
+		loop: true,
+		nav: false,
+		dots: true,
+		items: 1,
+		nav: true,
+		navText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>', '<i class="fa fa-chevron-right" aria-hidden="true"></i>'],
+		autoplay: true,
+		animateOut: 'fadeOut',
+		animateIn: 'fadeInLeft',
+		smartSpeed: 200
 	});
-});
+	var _video = $('.main_videos');
+	_video.owlCarousel({
+		loop: true,
+		nav: true,
+		navText: ['<i class="fas fa-caret-left"></i>', '<i class="fas fa-caret-right"></i>'],
+		items: 1,
+		autoplay: true,
+		smartSpeed: 200,
+		responsiveClass: true,
+		responsive: {
+			0: {
+				items: 1
+			},
+			768: {
+				items: 1
+			},
+			1200: {
+				items: 1
+			}
+		}
+	});
+	$(window).scroll(function () {
+		if ($(window).scrollTop() == $(document).height() - $(window).height()) {
+			$('.loading').hide();
+			loadData();
+		}
+	});
+	function loadData() {
+		var html = '';
+		for (i = 0; i < 1; i++) {
+			html += "<div class='_item_'> <div class='img'><img src='img/2day/img1.jpg' alt=''></div> <div class='text'> <h4> <a href='#'>Lorem Ipsum is simply dummy text of the printing and typesetting industry</a></h4> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took ......</p><span>Bởi <strong>Amin  </strong>-  <span class='date'>1 giờ trước</span></span> </div> </div>";
+		}
+		$('.loadnews').append(html);
+	}
+	$('.lazy').lazy();
+	$('.main-trending').owlCarousel({
+		loop: true,
+		nav: false,
+		items: 1,
+		dots: true,
+		autoplay: true,
+		smartSpeed: 200,
+		responsiveClass: true,
+		responsive: {
+			0: {
+				items: 1
+			},
+			768: {
+				items: 1
+			},
+			1200: {
+				items: 1
+			}
+		}
+	});
+	$('.main-trending .owl-dot').each(function () {
+		$(this).text($(this).index() + 1);
+	});
+	$('.main-video').owlCarousel({
+		loop: true,
+		nav: false,
+		items: 1,
+		dots: true,
+		autoplay: true,
+		smartSpeed: 200,
+		margin: 30,
+		nav: true,
+		navText: ['<i class="arrow-left"><img src="img/2day/svg/left.svg" alt=""></i>', '<i class="arrow-right"><img src="img/2day/svg/right.svg" alt=""></i>'],
+
+	});
+	$('.lg-right .search').click(function (e) {
+		$('.form-search').show();
+	})
+	$('.search-close').click(function (e) {
+		$('.form-search').hide();
+	})
+	$('.info-avatar').click(function (e) {
+		$('.info-open').toggleClass('active');
+	})
+	$(window).on('scroll', function () {
+		var wtop = $(window).scrollTop();
+		if (wtop > 500) {
+			$('.menu').addClass('sticky-header');
+			$("#top").addClass('active');
+		} else {
+			$("#top").removeClass('active');
+			$('.menu').removeClass('sticky-header');
+		}
+	});
+	$("a[href='#top']").click(function () {
+		$("html, body").animate({
+			scrollTop: 0
+		}, "slow");
+		return false;
+	});
+	$('.open-register').click(function (e) {
+		$('.box_login_register_').show();
+	});
+	$('.close-register').click(function (e) {
+		$('.box_login_register_').hide();
+	});
+	$('.menu-click').click(function(e)
+	 {
+	 		$('.menu-mobile').toggleClass('active');
+	 });
+	 
+	$('.close_mobile').click(function(e)
+	{
+			$('.menu-mobile').toggleClass('active');
+	});
+})
