@@ -1714,76 +1714,7 @@ img
             font-size: 40px
             color: #fff
 
-  .newsdetail-page 
-    padding: 15px
-    .detail
-      h1
-        font-size: 20px
-        color: #212121
-        font-weight: bold
-
-      .head
-        padding: 20px 0
-
-        .text
-          display: -webkit-box
-          display: -ms-flexbox
-          display: flex
-          display: -webkit-flex
-          -webkit-box-align: center
-          -ms-flex-align: center
-          align-items: center
-
-          .date
-            font-size: 16px
-            font-weight: bold
-
-            span
-              color: #636363
-              font-weight: normal
-
-          .social
-            margin: 0 0 0 20px
-
-      .xem-nhanh
-        padding: 15px
-        background: #f7f7f7
-
-        ul
-          li
-            list-style: disc
-            list-style-position: inside
-            line-height: 1.5
-            margin: 5px 0
-
-            a
-              color: #424242
-              font-size: 16px
-
-      .ctent_detail
-        p
-          line-height: 1.3
-          font-size: 16px
-
-        img
-          display: block
-          margin: 10px auto
-
-      .share
-        padding: 20px 0
-        margin: 20px 0
-        border-top: 1px solid #d9d9d9
-        border-bottom: 1px solid #d9d9d9
-        display: -webkit-box
-        display: -ms-flexbox
-        display: flex
-        display: -webkit-flex
-        -webkit-box-align: center
-        -ms-flex-align: center
-        align-items: center
-        -webkit-box-pack: justify
-        -ms-flex-pack: justify
-        justify-content: space-between
+  
     .video_list
       border-bottom: none
       h2._top-head
@@ -2499,17 +2430,16 @@ footer
   -webkit-transition: 1s ease-out
   -o-transition: 1s ease-out
   transition: 1s ease-out
-  left: -100%
+  left: 0
   z-index: 15
   overflow-x: hidden
   overflow-y: scroll
-  opacity: 0
+  display: none
   &.active
     -webkit-transition: 1s ease-out
     -o-transition: 1s ease-out
     transition: 1s ease-out
-    left: 0
-    opacity: 1
+    display: block
   span.close_mobile
     font-size: 30px
     color: #fff
@@ -3148,213 +3078,28 @@ footer
           display: block
           border-radius: 50%
 section.breadcrumbs
-  background: #f3f3f3
 
   ul
     li
       float: left
       a
-        color: #636363
+        font-family: 'Roboto', sans-serif
         font-size: 16px
-
-        i
-          margin: 0 10px 0 0
+        color: #01C3FF
 
       &::after
         content: "-"
         padding: 0 10px
+        color: #01C3FF
 
       &:last-child::after
         display: none
 
-  &.breadcrumbs2 ul
-    padding: 10px
-    background: #f7f7f7
-
-    li
-      a, &::after
-        color: #1d99cc
-
   &.breadcrumbs3 ul li
     a, &::after
       color: #1d99cc
-.comments-area
-  .replay_comment .l
-    margin: 0 0 20px 0
-    border-bottom: 1px dashed #000
 
-  .name
-    display: -webkit-box
-    display: -ms-flexbox
-    display: flex
-    display: -webkit-flex
-    -webkit-box-pack: justify
-    -ms-flex-pack: justify
-    justify-content: space-between
-    -webkit-box-align: center
-    -ms-flex-align: center
-    align-items: center
 
-    ._left
-      display: -webkit-box
-      display: -ms-flexbox
-      display: flex
-      display: -webkit-flex
-      -webkit-box-pack: justify
-      -ms-flex-pack: justify
-      justify-content: space-between
-      -webkit-box-align: center
-      -ms-flex-align: center
-      align-items: center
-
-    h5
-      font-size: 15px
-      font-weight: bold
-      margin: 0 0 5px 0
-    
-
-    ._left
-      h5
-        font-size: 15px
-        font-weight: bold
-        margin: 0 0 5px 0
-        span 
-          color: #979797
-
-      img
-        margin: 0 10px 0 0
-
-    margin: 0 0 10px 0
-
-  .replay
-    display: -webkit-box
-    display: -ms-flexbox
-    display: flex
-    display: -webkit-flex
-    -webkit-box-align: center
-    -ms-flex-align: center
-    align-items: center
-    margin: 10px 0 0 0
-    .like i
-      color: #01c3ff
-
-    a
-      margin: 0 10px 0 0
-      padding: 0 10px 0 0
-      color: #288ad6
-      border-right: 1px solid #000
-      color: #004f8b
-
-      &:last-child
-        border-right: none
-        margin: 0
-        padding: 0
-
-      i
-        color: #999999
-        margin: 0 0 0 5px
-
-    .time
-      color: #999999
-
-    .l
-      width: 100%
-
-  .persion-replay
-    padding: 20px 0 20px 20px
-    .pr
-      padding: 0 0 10px 0
-      margin: 0 0 10px 0
-
-      &:last-child
-        padding: 0
-        margin: 0
-        border-bottom: none
-
-    .head
-      display: -webkit-box
-      display: -ms-flexbox
-      display: flex
-      display: -webkit-flex
-      -webkit-box-align: center
-      -ms-flex-align: center
-      align-items: center
-      -webkit-box-pack: justify
-      -ms-flex-pack: justify
-      justify-content: space-between
-
-      ._left
-        display: -webkit-box
-        display: -ms-flexbox
-        display: flex
-        display: -webkit-flex
-        -webkit-box-align: center
-        -ms-flex-align: center
-        align-items: center
-        -webkit-box-pack: justify
-        -ms-flex-pack: justify
-        justify-content: space-between
-
-      h5
-        font-size: 15px
-        font-weight: bold
-
-      ._left
-        h5
-          font-size: 15px
-          font-weight: bold
-
-        img
-          margin: 0 10px 0 0
-
-      margin: 0 0 10px 
-.box-comments
-  display: -webkit-box
-  display: -ms-flexbox
-  display: flex
-  display: -webkit-flex
-  -webkit-box-pack: justify
-  -ms-flex-pack: justify
-  justify-content: space-between
-  -webkit-box-align: center
-  -ms-flex-align: center
-  align-items: center
-  padding: 15px 20px
-  background: #f0f0f0
-  margin: 0 -15px 20px -15px
-
-  span.count
-    color: #000000
-    font-size: 18px
-.comments-review
-  display: inline-block
-  width: 100%
-  .comments
-    width: 100%
-    border: none
-    height: 100px
-    outline: none
-    padding: 20px
-    border: 1px solid #999999
-
-  p
-    font-size: 16px
-    padding: 10px 0
-    a
-      font-weight : bold
-      color: #000
-
-  span.submit 
-    input[type="submit"]
-      width: 105px
-      height: 48px
-      background: #01c3ff
-      text-align: center
-      border: none
-      color: #fff
-      text-transform: uppercase
-      font-size: 25px
-    float: right
 .box_login_register_
   background: #fff
   position: fixed
@@ -3542,15 +3287,6 @@ section.breadcrumbs
       position: relative
       background: #fff
       z-index: 1
-    &::before
-      content: ""
-      position: absolute
-      width: 100%
-      height: 2px
-      background: #F82E56
-      top: 28px
-      left: 0
-      z-index: 0
 .newest2
   .div-row
     margin-bottom: 30px
@@ -3642,6 +3378,10 @@ section.breadcrumbs
     margin: 0 0 30px 0
     &:last-child
       margin: 0
+    &.main
+      h3
+        font-size: 30px
+        line-height: 30px
   h2
     position: relative
     height: 54px 
@@ -3928,4 +3668,312 @@ section.breadcrumbs
   margin: 0 0 15px 0
   .div-row
     margin: 0 0 15px 0
+.newsdetail-page
+  .detail
+    h1
+      font-style: normal
+      font-weight: 500
+      font-size: 50px
+      line-height: 60px
+      color: #000000
+    h2 
+      font-family: 'Roboto', sans-serif
+      font-weight: normal
+      font-size: 20px
+      line-height: 35px
+      text-align: justify
+      color: #000000
+      margin: 0 0 20px 0
+
+    .head
+      padding: 20px 0
+      .text 
+        margin: 0 0 10px 0
+        .date
+          font-family: 'Roboto', sans-serif
+          font-size: 16px
+          line-height: 19px
+          color: #000000
+          span
+            font-family: 'Roboto', sans-serif
+            font-weight: 300;
+            font-size: 14px
+            line-height: 16px
+            color: #636363
+        .social
+          margin: 0 0 0 20px
+    .xem-nhanh
+      padding: 20px
+      background: #f7f7f7
+      ul
+        padding: 0 20px
+        li
+          list-style: disc
+          list-style-position: inside
+          line-height: 1.5
+          margin: 5px 0
+          a 
+            color: #424242
+            font-size: 20px
+    blockquote
+      p
+        font-weight: 600
+        font-size: 30px
+        line-height: 50px
+        text-align: center
+        color: #000000
+        &::before
+          content: '\201C'
+        &::after
+          content: '\201D'
+    .ctent_detail
+      p
+        font-family: 'Roboto', sans-serif
+        font-style: normal
+        font-weight: 300
+        font-size: 16px
+        line-height: 35px
+        text-align: justify
+        color: #232323
+        margin: 0 0 20px 0
+
+      img
+        display: block
+        margin: 0 auto 20px auto
+      ul
+        margin: 0 0 20px 50px
+        li
+          list-style: disc
+          a
+            font-family: 'Roboto', sans-serif
+            font-weight: 300
+            font-size: 16px
+            line-height: 35px
+            text-align: justify
+            color: #232323
+    .ctent_detail_left, .ctent_detail_right
+      width: calc(50% - 15px)
+    .share
+      padding: 20px 0
+      margin: 20px 0
+      border-top: 1px solid #d9d9d9
+      border-bottom: 1px solid #d9d9d9
+      display: -webkit-box
+      display: -ms-flexbox
+      display: flex
+      display: -webkit-flex
+      -webkit-box-align: center
+      -ms-flex-align: center
+      align-items: center
+      -webkit-box-pack: justify
+      -ms-flex-pack: justify
+      justify-content: space-between
+
  
+  .detail + .video_sec
+    margin: 0 -15px
+    h2
+      font-size: 40px
+      background: #fff
+      &::after
+        right: 0
+        width:  calc( 100% - 300px)
+        margin: 0
+        top: 30px
+.comments-area
+  .replay_comment .l
+    margin: 0 0 20px 0
+  .name, .name ._left
+    display: flex
+    display: -webkit-flex
+    justify-content: space-between
+    align-items: center
+    h5
+      font-family: 'Roboto', sans-serif
+      font-weight: 500
+      font-size: 16px
+      line-height: 28px
+      color: #004972
+  .content_left
+    margin: 0 0 0 52px
+    .content
+      font-family: 'Roboto', sans-serif
+      font-weight: 300
+      font-size: 16px
+      line-height: 27px
+      color: #232323
+      margin: 0 0 10px 0
+      display: flex
+      align-items: center
+  .name
+    ._left
+      img
+        margin: 0 10px 0 0
+  .replay
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    display: -webkit-flex
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+    margin: 0 0 10px 0
+    .like, .answer
+      font-family: 'Roboto', sans-serif
+      font-weight: 300
+      font-size: 13px
+      line-height: 15px
+      color: #007BFF
+    .share, .time
+      font-family: 'Roboto', sans-serif
+      font-weight: 300
+      font-size: 13px
+      line-height: 15px
+      color: #8E8E8E
+    a
+      margin: 0 10px 0 0
+      padding: 0 10px 0 0
+
+    .time
+      color: #999999
+
+    .l
+      width: 100%
+  .count-answer
+    img
+      margin: 0 5px 0 0
+    span
+      font-family: 'Roboto', sans-serif
+      font-weight: 300
+      font-size: 16px
+      line-height: 28px
+      color: #0093E6
+  a.xem-them
+    background: #F5F5F5
+    display: block
+    width: 100%
+    font-family: 'Roboto', sans-serif
+    font-weight: 300
+    font-size: 16px
+    line-height: 28px
+    color: #0093E5
+    padding: 10px 0
+    text-align: center
+  .persion-replay
+    padding: 10px 0 0 50px
+    .pr
+      padding: 0 0 10px 0
+      margin: 0 0 10px 0
+
+      &:last-child
+        padding: 0
+        margin: 0
+        border-bottom: none
+
+    .head, .head ._left
+      display: flex
+      display: -webkit-flex
+      align-items: center
+      justify-content: space-between
+      h5
+        font-family: 'Roboto', sans-serif
+        font-weight: 500
+        font-size: 16px
+        line-height: 28px
+        color: #004972
+    .head
+      ._left 
+        img
+          margin: 0 10px 0 0
+.box-comments
+  display: flex
+  display: -webkit-flex
+  justify-content: space-between
+  align-items: center
+  margin: 0 0 20px 0
+  span.count
+    font-weight: 500
+    font-size: 20px
+    line-height: 24px
+    text-transform: uppercase
+    color: #000000
+  .search-ct
+    a
+      font-size: 15px
+      color: #000
+      &:nth-child(1)
+        border-right: 1px solid #000
+        margin: 0 10px 0 0
+        padding: 0 10px 0 0
+.comments-review
+  margin: 0 0 30px 0
+  .div-row
+    margin: 0 0 0 72px
+  .img
+    margin: 0 10px 0 0
+    width: 62px
+  .comments
+    width: calc(100% - 72px)
+    border: none
+    height: 60px
+    outline: none
+    padding: 10px
+    background: #FFFFFF
+    border: 1px solid #D9D9D9
+    font-family: 'Roboto', sans-serif
+    font-weight: 300
+    font-size: 14px
+    line-height: 16px
+    color: #636363
+  p
+    font-family: 'Roboto', sans-serif
+    font-weight: 300
+    font-size: 13px
+    line-height: 19px
+    color: #636363
+    margin: 10px 0
+    a
+      font-weight: 500
+      color: #636363
+  span
+    &.submit
+      input[type="submit"]
+        width: 105px
+        height: 35px
+        background: #01C3FF
+        font-family: 'Roboto', sans-serif
+        font-weight: 500
+        font-size: 18px
+        line-height: 21px
+        text-transform: uppercase
+        color: #FFFFFF
+        border: none
+.tags
+  padding: 30px 0
+  margin: 0 0 30px 0
+  border-bottom: 1px solid #E7E7E7
+  display: inline-block
+  span
+    font-weight: 500
+    font-size: 20px
+    line-height: 24px
+    text-transform: uppercase
+    color: #000000
+    margin: 0 20px 0 0
+    float: left
+  ul 
+    li
+      float: left
+      &:last-child
+        a 
+          &::after
+            content: ""
+      a
+        font-family: 'Roboto', sans-serif
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: #636363
+        &::after
+          content: "/"
+          padding: 0 5px
