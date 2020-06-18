@@ -93,7 +93,7 @@ $(document).ready(function () {
 	})
 	$(window).on('scroll', function () {
 		var wtop = $(window).scrollTop();
-		if (wtop > 500) {
+		if (wtop > 0) {
 			$('#header').addClass('sticky-header');
 			$("#top").addClass('active');
 		} else {
