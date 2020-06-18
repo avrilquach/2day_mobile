@@ -2785,7 +2785,7 @@ section.breadcrumbs.breadcrumbs3 ul li a, section.breadcrumbs.breadcrumbs3 ul li
 .trending-week {
   margin: 30px 0 0 0; }
   .trending-week .swiper-wrapper li {
-    width: 100px; }
+    width: auto; }
   .trending-week .tab-pane .div-row {
     margin: 0 0 30px 0; }
     .trending-week .tab-pane .div-row:last-child {
