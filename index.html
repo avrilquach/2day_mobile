@@ -118,12 +118,14 @@
         </div>
         <div class="trending-week">
           <h2> <span>trending tuần này</span></h2>
-          <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item"><a class="nav-link active" id="home-tab" data-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="true">tất cả</a></li>
-            <li class="nav-item"><a class="nav-link" id="profile-tab" data-toggle="tab" href="#entertainment" role="tab" aria-controls="entertainment" aria-selected="false">giải trí</a></li>
-            <li class="nav-item"><a class="nav-link" id="contact-tab" data-toggle="tab" href="#beauty" role="tab" aria-controls="beauty" aria-selected="false">làm đẹp</a></li>
-            <li class="nav-item"><a class="nav-link" id="contact-tab" data-toggle="tab" href="#fashion" role="tab" aria-controls="fashion" aria-selected="false">thời trang</a></li>
-          </ul>
+          <div class="swiper-container">
+            <ul class="nav nav-tabs swiper-wrapper" id="myTab" role="tablist">
+              <li class="nav-item swiper-slide"><a class="nav-link active" id="home-tab" data-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="true">tất cả</a></li>
+              <li class="nav-item swiper-slide"><a class="nav-link" id="profile-tab" data-toggle="tab" href="#entertainment" role="tab" aria-controls="entertainment" aria-selected="false">giải trí</a></li>
+              <li class="nav-item swiper-slide"><a class="nav-link" id="contact-tab" data-toggle="tab" href="#beauty" role="tab" aria-controls="beauty" aria-selected="false">làm đẹp</a></li>
+              <li class="nav-item swiper-slide"><a class="nav-link" id="contact-tab" data-toggle="tab" href="#fashion" role="tab" aria-controls="fashion" aria-selected="false">thời trang</a></li>
+            </ul>
+          </div>
           <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
               <div class="div-row"> <a class="item-new" href="#">
@@ -354,18 +356,21 @@
           </div>
         </div>
       </footer><a class="active" id="top" href="#top"><img src="img/2day/svg/icon-scroll.svg"></a>
-      <div class="menu-mobile"><span class="close_mobile"><img src="img/2day/svg/close.svg"></span>
-        <ul>
-          <li><a href="#">TV        </a></li>
-          <li><a href="#">giải trí</a></li>
-          <li><a href="#">làm đẹp & Thời trang</a></li>
-          <li><a href="#">Đời sống</a></li>
-          <li><a href="#">Du lịch</a></li>
-          <li><a href="#">Xã hội</a></li>
-          <li><a href="#">Thế giớI</a></li>
-          <li><a href="#">Học đường</a></li>
-          <li><a href="#">Video</a></li>
-        </ul>
+      <div class="menu-mobile">
+        <div class="bg-black"></div>
+        <div class="bg-blue"><span class="close_mobile"><img src="img/2day/svg/close.svg"></span>
+          <ul>
+            <li><a href="#">TV        </a></li>
+            <li><a href="#">giải trí</a></li>
+            <li><a href="#">làm đẹp & Thời trang</a></li>
+            <li><a href="#">Đời sống</a></li>
+            <li><a href="#">Du lịch</a></li>
+            <li><a href="#">Xã hội</a></li>
+            <li><a href="#">Thế giớI</a></li>
+            <li><a href="#">Học đường</a></li>
+            <li><a href="#">Video</a></li>
+          </ul>
+        </div>
       </div>
     </div>
     <script type="text/javascript" src="js/jquery.min.js"></script>

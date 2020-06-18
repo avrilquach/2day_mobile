@@ -78,15 +78,16 @@ html
         .trending-week
           h2 
             span trending tuần này
-          ul#myTab.nav.nav-tabs(role='tablist')
-            li.nav-item
-              a#home-tab.nav-link.active(data-toggle='tab', href='#all', role='tab', aria-controls='all', aria-selected='true') tất cả
-            li.nav-item
-              a#profile-tab.nav-link(data-toggle='tab', href='#entertainment', role='tab', aria-controls='entertainment', aria-selected='false') giải trí
-            li.nav-item
-              a#contact-tab.nav-link(data-toggle='tab', href='#beauty', role='tab', aria-controls='beauty', aria-selected='false') làm đẹp
-            li.nav-item
-              a#contact-tab.nav-link(data-toggle='tab', href='#fashion', role='tab', aria-controls='fashion', aria-selected='false') thời trang
+          .swiper-container
+            ul#myTab.nav.nav-tabs(role='tablist').swiper-wrapper
+              li.nav-item.swiper-slide
+                a#home-tab.nav-link.active(data-toggle='tab', href='#all', role='tab', aria-controls='all', aria-selected='true') tất cả
+              li.nav-item.swiper-slide
+                a#profile-tab.nav-link(data-toggle='tab', href='#entertainment', role='tab', aria-controls='entertainment', aria-selected='false') giải trí
+              li.nav-item.swiper-slide
+                a#contact-tab.nav-link(data-toggle='tab', href='#beauty', role='tab', aria-controls='beauty', aria-selected='false') làm đẹp
+              li.nav-item.swiper-slide
+                a#contact-tab.nav-link(data-toggle='tab', href='#fashion', role='tab', aria-controls='fashion', aria-selected='false') thời trang
           #myTabContent.tab-content
             #all.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='all-tab')
               .div-row 
