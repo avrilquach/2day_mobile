@@ -12,15 +12,15 @@ $(document).ready(function () {
 		animateIn: 'fadeInLeft',
 		smartSpeed: 200
 	});
-	var _video = $('.main_videos');
+	var _video = $('.main-videos');
 	_video.owlCarousel({
 		loop: true,
-		nav: true,
-		navText: ['<i class="fas fa-caret-left"></i>', '<i class="fas fa-caret-right"></i>'],
+		nav: false,
 		items: 1,
 		autoplay: true,
 		smartSpeed: 200,
 		responsiveClass: true,
+		dots: true,
 		responsive: {
 			0: {
 				items: 1

@@ -2871,13 +2871,19 @@ footer
         margin: 0 0 0 15px
         width: 80%
   .video_list
-    padding: 0 0 10px 0
-    border-bottom: 1px solid #dbdbdb
+    margin: 0 0 15px 0
     h2._top-head
-      font-size: 25px
-      position: relative
+      font-style: normal
+      font-weight: 500
+      font-size: 45px
+      line-height: 54px
       text-transform: uppercase
-      margin: 15px 15px 0 15px
+      &.purple
+        color: #690AA7
+      &.red
+        color: #F82E56
+      &.blue
+        color: #01C3FF
       &::after
         content: ""
         position: absolute
@@ -2890,32 +2896,29 @@ footer
         &::after
           display: none
     a.readmore
-      font-size: 16px
-      color: #01c3ff
-      margin: 0 15px 0 0
+      font-family: 'Roboto', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 13px
+      line-height: 15px
+      text-transform: uppercase
+      color: #9C9C9C
     .row
-      .item.style3
-        width: 50%
+      .item.style4
+        width: calc(50% - 7.5px)
   .item
     position: relative
-    .caption
-      padding: 0 15px
     .img
       position: relative
       margin: 0 0 10px 0
-
       img
         width: 100%
 
       .popup-youtube
         position: absolute
-        right: 0
-        left: 0
-        top: 40%
-        margin: 0 auto
+        left: 15px
+        top: 15px
         text-align: center
-        width: 10%
-
         i
           font-size: 30px
           color: #fff
@@ -2925,20 +2928,24 @@ footer
           margin: 0 auto
 
     h3
+      font-style: normal
+      font-weight: normal
       font-size: 20px
+      line-height: 24px
+      color: #000000
       margin: 0 0 10px 0
-      color: #000
-
     p
       font-size: 16px
       color: #636363
       margin: 0 0 10px 0
 
-    span
-      font-size: 14px
-
-      span.date
-        font-style: italic
+    span.date
+      font-family: 'Roboto', sans-serif
+      font-style: normal
+      font-weight: 300
+      font-size: 13px
+      line-height: 24px
+      color: #A4A4A4
     &.style1
       padding: 0 15px
       h3
@@ -2946,29 +2953,27 @@ footer
       .caption
         padding: 0
     &.style2
-      .img
-        margin: 20px 0 10px 0
       .caption
         padding: 0
-        span
-          font-size: 16px
-          color: #01c3ff
-          .date
-            font-style: normal
-            color: #000
-    &.style3
-      padding: 20px 15px 10px 15px
-      h3 a
-        color: #000    
+        
+    &.style3 
       .caption
-        padding: 0
+        position: absolute
+        bottom: 0
+        padding: 15px
+        width: 100%
         &.style3
-          span
-            font-size: 16px
-            color: #01c3ff
-            .date
-              font-style: normal
-              color: #000
+          h3
+            margin: 0
+            color: #fff
+            font-size: 25px
+          span.date
+            font-family: 'Roboto', sans-serif
+            font-style: normal
+            font-weight: 300
+            font-size: 10px
+            line-height: 12px
+            color: #E6E5E5
     &.style4
       padding: 0 0 10px 0
       h3 a
@@ -3006,7 +3011,6 @@ footer
 
       span
         font-size: 16px
-        color: #01c3ff
         &.date
           color: #000
   .main-banner
@@ -3284,7 +3288,6 @@ section.breadcrumbs
         margin-top: 30px
         display: block
   .nav
-    justify-content: center
     flex-wrap: unset
     border: none
     margin: 0 0 20px 0
@@ -3835,13 +3838,6 @@ section.breadcrumbs
       img
         margin: 0 10px 0 0
   .replay
-    display: -webkit-box
-    display: -ms-flexbox
-    display: flex
-    display: -webkit-flex
-    -webkit-box-align: center
-    -ms-flex-align: center
-    align-items: center
     margin: 0 0 10px 0
     .like, .answer
       font-family: 'Roboto', sans-serif
@@ -4014,3 +4010,55 @@ section.breadcrumbs
   padding: 10px 0
   text-align: center
   margin: 0 0 10px 0
+.main-videos
+  .owl-dots
+    position: absolute
+    bottom: 15px
+    display: flex
+    justify-content: center
+    width: 100%
+    .owl-dot
+      margin: 0 5px
+      span
+        width: 10px
+        height: 10px
+        background: #C4C4C4
+        border-radius: 50%
+        display: block
+      &.active
+        span
+          background: #01C3FF
+  .div-row
+    padding: 0 15px 
+    img
+      width: 94px
+      height: 94px
+      margin: 0 auto 50px auto
+    h2
+      font-weight: 500;
+      font-size: 40px
+      line-height: 35px
+      text-align: center
+      color: #FFFFFF
+      margin: 0 0 20px 0
+    p
+      font-family: 'Roboto', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 22px
+      text-align: center
+      color: #FFFFFF
+      margin: 0 0 20px 0
+    a
+      width: 120px
+      line-height: 37px
+      background: #01C3FF
+      border-radius: 3px
+      margin: 0 auto
+      display: block
+      color: #fff
+      font-weight: 500
+      font-size: 20px
+      text-transform: uppercase
+      text-align: center

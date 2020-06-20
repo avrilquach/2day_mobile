@@ -2423,13 +2423,19 @@ footer {
     width: 80%; }
 
 .page_videos .video_list {
-  padding: 0 0 10px 0;
-  border-bottom: 1px solid #dbdbdb; }
+  margin: 0 0 15px 0; }
   .page_videos .video_list h2._top-head {
-    font-size: 25px;
-    position: relative;
-    text-transform: uppercase;
-    margin: 15px 15px 0 15px; }
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 54px;
+    text-transform: uppercase; }
+    .page_videos .video_list h2._top-head.purple {
+      color: #690AA7; }
+    .page_videos .video_list h2._top-head.red {
+      color: #F82E56; }
+    .page_videos .video_list h2._top-head.blue {
+      color: #01C3FF; }
     .page_videos .video_list h2._top-head::after {
       content: "";
       position: absolute;
@@ -2441,16 +2447,18 @@ footer {
     .page_videos .video_list h2._top-head._none_line::after {
       display: none; }
   .page_videos .video_list a.readmore {
-    font-size: 16px;
-    color: #01c3ff;
-    margin: 0 15px 0 0; }
-  .page_videos .video_list .row .item.style3 {
-    width: 50%; }
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #9C9C9C; }
+  .page_videos .video_list .row .item.style4 {
+    width: calc(50% - 7.5px); }
 
 .page_videos .item {
   position: relative; }
-  .page_videos .item .caption {
-    padding: 0 15px; }
   .page_videos .item .img {
     position: relative;
     margin: 0 0 10px 0; }
@@ -2458,12 +2466,9 @@ footer {
       width: 100%; }
     .page_videos .item .img .popup-youtube {
       position: absolute;
-      right: 0;
-      left: 0;
-      top: 40%;
-      margin: 0 auto;
-      text-align: center;
-      width: 10%; }
+      left: 15px;
+      top: 15px;
+      text-align: center; }
       .page_videos .item .img .popup-youtube i {
         font-size: 30px;
         color: #fff; }
@@ -2471,45 +2476,47 @@ footer {
         width: 100%;
         margin: 0 auto; }
   .page_videos .item h3 {
+    font-style: normal;
+    font-weight: normal;
     font-size: 20px;
-    margin: 0 0 10px 0;
-    color: #000; }
+    line-height: 24px;
+    color: #000000;
+    margin: 0 0 10px 0; }
   .page_videos .item p {
     font-size: 16px;
     color: #636363;
     margin: 0 0 10px 0; }
-  .page_videos .item span {
-    font-size: 14px; }
-    .page_videos .item span span.date {
-      font-style: italic; }
+  .page_videos .item span.date {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 24px;
+    color: #A4A4A4; }
   .page_videos .item.style1 {
     padding: 0 15px; }
     .page_videos .item.style1 h3 {
       margin: 20px 0 10px 0; }
     .page_videos .item.style1 .caption {
       padding: 0; }
-  .page_videos .item.style2 .img {
-    margin: 20px 0 10px 0; }
   .page_videos .item.style2 .caption {
     padding: 0; }
-    .page_videos .item.style2 .caption span {
-      font-size: 16px;
-      color: #01c3ff; }
-      .page_videos .item.style2 .caption span .date {
-        font-style: normal;
-        color: #000; }
-  .page_videos .item.style3 {
-    padding: 20px 15px 10px 15px; }
-    .page_videos .item.style3 h3 a {
-      color: #000; }
-    .page_videos .item.style3 .caption {
-      padding: 0; }
-      .page_videos .item.style3 .caption.style3 span {
-        font-size: 16px;
-        color: #01c3ff; }
-        .page_videos .item.style3 .caption.style3 span .date {
-          font-style: normal;
-          color: #000; }
+  .page_videos .item.style3 .caption {
+    position: absolute;
+    bottom: 0;
+    padding: 15px;
+    width: 100%; }
+    .page_videos .item.style3 .caption.style3 h3 {
+      margin: 0;
+      color: #fff;
+      font-size: 25px; }
+    .page_videos .item.style3 .caption.style3 span.date {
+      font-family: 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 10px;
+      line-height: 12px;
+      color: #E6E5E5; }
   .page_videos .item.style4 {
     padding: 0 0 10px 0; }
     .page_videos .item.style4 h3 a {
@@ -2540,8 +2547,7 @@ footer {
       color: #000;
       margin: 0 0 10px 0; }
     .page_videos ._item_ .text span {
-      font-size: 16px;
-      color: #01c3ff; }
+      font-size: 16px; }
       .page_videos ._item_ .text span.date {
         color: #000; }
 
@@ -2802,9 +2808,6 @@ section.breadcrumbs.breadcrumbs3 ul li a, section.breadcrumbs.breadcrumbs3 ul li
       margin-top: 30px;
       display: block; }
   .trending-week .nav {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
     -ms-flex-wrap: unset;
     flex-wrap: unset;
     border: none;
@@ -3411,13 +3414,6 @@ section.breadcrumbs.breadcrumbs3 ul li a, section.breadcrumbs.breadcrumbs3 ul li
   margin: 0 10px 0 0; }
 
 .comments-area .replay {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  display: -webkit-flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   margin: 0 0 10px 0; }
   .comments-area .replay .like, .comments-area .replay .answer {
     font-family: 'Roboto', sans-serif;
@@ -3597,3 +3593,59 @@ section.breadcrumbs.breadcrumbs3 ul li a, section.breadcrumbs.breadcrumbs3 ul li
   padding: 10px 0;
   text-align: center;
   margin: 0 0 10px 0; }
+
+.main-videos .owl-dots {
+  position: absolute;
+  bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%; }
+  .main-videos .owl-dots .owl-dot {
+    margin: 0 5px; }
+    .main-videos .owl-dots .owl-dot span {
+      width: 10px;
+      height: 10px;
+      background: #C4C4C4;
+      border-radius: 50%;
+      display: block; }
+    .main-videos .owl-dots .owl-dot.active span {
+      background: #01C3FF; }
+
+.main-videos .div-row {
+  padding: 0 15px; }
+  .main-videos .div-row img {
+    width: 94px;
+    height: 94px;
+    margin: 0 auto 50px auto; }
+  .main-videos .div-row h2 {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 35px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0 0 20px 0; }
+  .main-videos .div-row p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0 0 20px 0; }
+  .main-videos .div-row a {
+    width: 120px;
+    line-height: 37px;
+    background: #01C3FF;
+    border-radius: 3px;
+    margin: 0 auto;
+    display: block;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center; }
