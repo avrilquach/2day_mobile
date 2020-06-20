@@ -2805,6 +2805,8 @@ section.breadcrumbs.breadcrumbs3 ul li a, section.breadcrumbs.breadcrumbs3 ul li
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-wrap: unset;
+    flex-wrap: unset;
     border: none;
     margin: 0 0 20px 0; }
     .trending-week .nav li a {
