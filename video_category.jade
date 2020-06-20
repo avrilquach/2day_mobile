@@ -5,7 +5,15 @@ html
     #wrapper_mobile
       include inc/header.jade
       .page_videos
-      
+        section.video_list
+          .owl-carousel.owl-theme.main-videos
+            -for(i=0;i<3;i++)
+              .item(style="background: url('img/2day/hinh1-6.jpg') no-repeat top center; height: 680px").row.align-items-center.justify-content-center
+                .div-row
+                  img(src='img/2day/svg/icon-video-big.svg', alt='')
+                  h2 Lorem Ipsum is simply dummy text
+                  p Lorem Ipsum is simply dummy text of the printing and typesetting Lorem Ipsum is simply dummy text of the printing and typesettingLorem Ipsum is simply dummy text of the printing and typesetting
+                  a(href='#') Xem ngay
         section.video_list
           -for(i=0;i<4;i++)
             .item.style3
