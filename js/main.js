@@ -82,13 +82,10 @@ $(document).ready(function () {
 		navText: ['<i class="arrow-left"><img src="img/2day/svg/left.svg" alt=""></i>', '<i class="arrow-right"><img src="img/2day/svg/right.svg" alt=""></i>'],
 
 	});
-	$('.lg-right .search').click(function (e) {
-		$('.form-search').show();
+	$('.search').click(function (e) {
+		$('.form-search').toggleClass('active');
 	})
-	$('.search-close').click(function (e) {
-		$('.form-search').hide();
-	})
-	$('.info-avatar').click(function (e) {
+	$('.profile').click(function (e) {
 		$('.info-open').toggleClass('active');
 	})
 	$(window).on('scroll', function () {
