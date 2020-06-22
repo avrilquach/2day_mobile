@@ -134,11 +134,20 @@ img
       height: 60px
     .search
       margin: 0 20px 0 0
+      img:nth-child(2)
+        display: none
+      &.active
+        img:nth-child(1)
+          display: none
+        img:nth-child(2)
+          display: block
     .logo-mobile
       padding: 0 10px
       display: block
       text-align: center
-
+    .div-row
+      display: flex
+      align-items: center
     .menu-click
       width: 35px
       display: block
@@ -4138,39 +4147,42 @@ section.breadcrumbs
       color: #FFFFFF
 .info-open
   position: absolute
-  width: 220px 
-  z-index: 1
-  background: #FFFFFF
-  border: 0.5px solid #E8E8E8
-  box-shadow: 0px 1px 4px rgba(156, 156, 156, 0.25)
   right: 5px
-  top: 70px
-  padding: 20px
+  top: 0
   display: none
+  padding-top: 70px
+  z-index: 1
+  .div-row-two
+    width: 220px 
+    background: #FFFFFF
+    border: 0.5px solid #E8E8E8
+    box-shadow: 0px 1px 4px rgba(156, 156, 156, 0.25)
+    padding: 20px
+    position: relative
+    &::before
+      content: ''
+      width: 0
+      height: 0
+      border-left: 10px solid transparent
+      border-right: 10px solid transparent
+      border-bottom: 10px solid #EFEFEF
+      position: absolute
+      right: 12px
+      top: -11px
+      z-index: 1
+    &::after
+      content: ''
+      width: 0
+      height: 0
+      border-left: 10px solid transparent
+      border-right: 10px solid transparent
+      border-bottom: 10px solid #fff
+      position: absolute
+      right: 12px
+      top: -9px
+      z-index: 1
   &.active
     display: block
-  &::before
-    content: ''
-    width: 0
-    height: 0
-    border-left: 10px solid transparent
-    border-right: 10px solid transparent
-    border-bottom: 10px solid #EFEFEF
-    position: absolute
-    right: 12px
-    top: -11px
-    z-index: 1
-  &::after
-    content: ''
-    width: 0
-    height: 0
-    border-left: 10px solid transparent
-    border-right: 10px solid transparent
-    border-bottom: 10px solid #fff
-    position: absolute
-    right: 12px
-    top: -9px
-    z-index: 1
   ul
     &:first-child
       border-bottom: 1px solid #D5D3D3
@@ -4182,3 +4194,7 @@ section.breadcrumbs
         font-size: 16px
         line-height: 40px
         color: #636363
+.profile
+  &:hover
+    .info-open
+      display: block

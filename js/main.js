@@ -83,10 +83,8 @@ $(document).ready(function () {
 
 	});
 	$('.search').click(function (e) {
+		$('.search').toggleClass('active');
 		$('.form-search').toggleClass('active');
-	})
-	$('.profile').click(function (e) {
-		$('.info-open').toggleClass('active');
 	})
 	$(window).on('scroll', function () {
 		var wtop = $(window).scrollTop();
