@@ -79,3 +79,38 @@ a#top.active(href="#top")
 				a(href='#') Học đường
 			li
 				a(href='#') Video
+.dang-ky
+	.container
+		span.close-dang-ky
+			img(src='img/2day/svg/close2.svg')
+		h2 Đăng ký
+		form
+			input(type='text' placeholder='Tên đăng nhập (*)').input 
+			input(type='text' placeholder='Email (*)').input
+			input(type='text' placeholder='Mật khẩu (*)').input
+			input(type='text' placeholder='Nhập lại mật khẩu(*)').input
+			input(type='submit' value='Đăng ký')
+.dang-nhap
+	.container
+		span.close-dang-nhap
+			img(src='img/2day/svg/close2.svg')
+		h2 Đăng nhập
+		form
+			input(type='text' placeholder='Tên đăng nhập (*)').input 
+			input(type='text' placeholder='Mật khẩu (*)').input
+			.div-row
+				.div-row-two
+					input(type='checkbox') 
+					label Lưu mật khẩu
+				a(href='#') Quên mật khẩu?
+			input(type='submit' value='Đăng nhập')
+		p.or Hoặc
+		a.fb(href='#')
+			.img
+				img(src='img/2day/svg/fb.svg')
+			p  Login by Facebook
+		a.google(href='#')
+			.img
+				img(src='img/2day/svg/google.svg')
+			p  Login by Google
+		a.dk(href='#') Đăng ký

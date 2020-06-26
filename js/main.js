@@ -108,23 +108,36 @@ $(document).ready(function () {
 	$('.close-register').click(function (e) {
 		$('.box_login_register_').hide();
 	});
-	$('.menu-click').click(function(e)
-	 {
-	 		$('.menu-mobile').toggleClass('active');
-	 });
-	 
-	$('.close_mobile').click(function(e)
-	{
-			$('.menu-mobile').toggleClass('active');
+	$('.menu-click').click(function (e) {
+		$('.menu-mobile').toggleClass('active');
 	});
-	$('.menu-mobile .bg-black').click(function(e)
-	{
-			$('.menu-mobile').toggleClass('active');
+
+	$('.close_mobile').click(function (e) {
+		$('.menu-mobile').toggleClass('active');
+	});
+	$('.menu-mobile .bg-black').click(function (e) {
+		$('.menu-mobile').toggleClass('active');
 	});
 	var swiper = new Swiper('.swiper-container', {
 		pagination: '.swiper-pagination',
 		slidesPerView: 'auto',
 		paginationClickable: true,
 		spaceBetween: 0
-});
+	});
+	$('.open-dang-ky').click(function (e) {
+		$('.dang-ky').show();
+	});
+	$('.close-dang-ky').click(function (e) {
+		$('.dang-ky').hide();
+	});
+	$('.dk').click(function (e) {
+		$('.dang-nhap').hide();
+		$('.dang-ky').show();
+	});
+	$('.open-dang-nhap').click(function (e) {
+		$('.dang-nhap').show();
+	});
+	$('.close-dang-nhap').click(function (e) {
+		$('.dang-nhap').hide();
+	});
 })
